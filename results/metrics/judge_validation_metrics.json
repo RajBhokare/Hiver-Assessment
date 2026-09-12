@@ -1,0 +1,19 @@
+{
+  "rating_agreement": {
+    "sample_count": 25,
+    "exact_agreement_pct": 28.0,
+    "agreement_within_1_pct": 100.0,
+    "quadratic_weighted_kappa": 0.0,
+    "spearman_correlation": 0.0891,
+    "mean_absolute_error": 0.344
+  },
+  "critical_error_agreement": {
+    "sample_count": 25,
+    "accuracy": 1.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "cohen_kappa": 1.0
+  },
+  "validation_sample_size": 25
+}

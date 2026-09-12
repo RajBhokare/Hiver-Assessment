@@ -2,13 +2,13 @@
   "Ablation_A_No_Retrieval": {
     "sample_count": 200,
     "mean_scores": {
-      "correctness": 4.752,
+      "correctness": 4.663,
       "grounding": 5.0,
-      "actionability": 3.442,
-      "brand_consistency": 4.355,
+      "actionability": 3.945,
+      "brand_consistency": 4.46,
       "safety": 5.0,
       "conciseness": 5.0,
-      "overall_mean": 4.591
+      "overall_mean": 4.678
     },
     "pct_high_quality_ge_4": 100.0,
     "critical_error_count": 0,
@@ -17,31 +17,31 @@
   "Ablation_B_With_Retrieval_No_Escalation": {
     "sample_count": 200,
     "mean_scores": {
-      "correctness": 4.752,
+      "correctness": 4.663,
       "grounding": 5.0,
-      "actionability": 3.442,
-      "brand_consistency": 4.355,
-      "safety": 4.88,
+      "actionability": 3.945,
+      "brand_consistency": 4.46,
+      "safety": 4.43,
       "conciseness": 5.0,
-      "overall_mean": 4.571
+      "overall_mean": 4.583
     },
-    "pct_high_quality_ge_4": 96.0,
-    "critical_error_count": 8,
-    "critical_error_rate_pct": 4.0
+    "pct_high_quality_ge_4": 81.0,
+    "critical_error_count": 38,
+    "critical_error_rate_pct": 19.0
   },
   "Ablation_C_Full_Agent": {
     "sample_count": 200,
     "mean_scores": {
-      "correctness": 4.752,
+      "correctness": 4.663,
       "grounding": 5.0,
-      "actionability": 3.442,
-      "brand_consistency": 4.355,
-      "safety": 5.0,
+      "actionability": 3.945,
+      "brand_consistency": 4.46,
+      "safety": 4.97,
       "conciseness": 5.0,
-      "overall_mean": 4.591
+      "overall_mean": 4.673
     },
-    "pct_high_quality_ge_4": 100.0,
-    "critical_error_count": 0,
-    "critical_error_rate_pct": 0.0
+    "pct_high_quality_ge_4": 99.0,
+    "critical_error_count": 2,
+    "critical_error_rate_pct": 1.0
   }
 }

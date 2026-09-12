@@ -1,9 +1,9 @@
 Category,Model / Configuration,Primary Metric,Primary Score,Secondary Metric,Secondary Score,Safety / Error Rate
-Intent Classification,majority_baseline,Macro F1,0.0706,Accuracy,0.635,N/A
-Intent Classification,tfidf_logistic_baseline,Macro F1,0.9816,Accuracy,0.98,N/A
-Intent Classification,final_agent,Macro F1,0.9816,Accuracy,0.98,N/A
-Escalation & Safety,trivial_escalation_strategy,Escalation F1,0.3636,Escalation Precision,0.2857,False Auto-Handling Rate: 50.0%
-Escalation & Safety,final_agent_escalation_policy,Escalation F1,0.3077,Escalation Precision,0.1818,False Auto-Handling Rate: 0.0%
-Reply Quality & Ablation,Ablation_A_No_Retrieval,Overall Mean Score (1-5),4.591,% High Quality (>=4.0),100.0,Critical Error Rate: 0.0%
-Reply Quality & Ablation,Ablation_B_With_Retrieval_No_Escalation,Overall Mean Score (1-5),4.571,% High Quality (>=4.0),96.0,Critical Error Rate: 4.0%
-Reply Quality & Ablation,Ablation_C_Full_Agent,Overall Mean Score (1-5),4.591,% High Quality (>=4.0),100.0,Critical Error Rate: 0.0%
+Intent Classification,majority_baseline,Macro F1,0.051,Accuracy,0.39,N/A
+Intent Classification,tfidf_logistic_baseline,Macro F1,0.9308,Accuracy,0.955,N/A
+Intent Classification,final_agent,Macro F1,0.9308,Accuracy,0.955,N/A
+Escalation & Safety,trivial_escalation_strategy,Escalation F1,0.5385,Escalation Precision,0.525,False Auto-Handling Rate: 44.7%
+Escalation & Safety,final_agent_escalation_policy,Escalation F1,0.605,Escalation Precision,0.4444,False Auto-Handling Rate: 5.3%
+Reply Quality & Ablation,Ablation_A_No_Retrieval,Overall Mean Score (1-5),4.678,% High Quality (>=4.0),100.0,Critical Error Rate: 0.0%
+Reply Quality & Ablation,Ablation_B_With_Retrieval_No_Escalation,Overall Mean Score (1-5),4.583,% High Quality (>=4.0),81.0,Critical Error Rate: 19.0%
+Reply Quality & Ablation,Ablation_C_Full_Agent,Overall Mean Score (1-5),4.673,% High Quality (>=4.0),99.0,Critical Error Rate: 1.0%

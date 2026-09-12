@@ -14,65 +14,65 @@
       "screen_display_touch",
       "store_billing_subscription"
     ],
-    "accuracy": 0.635,
-    "macro_precision": 0.0577,
+    "accuracy": 0.39,
+    "macro_precision": 0.0355,
     "macro_recall": 0.0909,
-    "macro_f1": 0.0706,
-    "weighted_f1": 0.4932,
+    "macro_f1": 0.051,
+    "weighted_f1": 0.2188,
     "per_intent": {
       "app_performance_crash": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 7
+        "support": 14
       },
       "apple_id_account_security": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 4
+        "support": 6
       },
       "audio_call_accessory": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 1
+        "support": 5
       },
       "battery_power_charging": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 16
+        "support": 29
       },
       "general_complaint_feedback": {
-        "precision": 0.635,
+        "precision": 0.39,
         "recall": 1.0,
-        "f1_score": 0.7768,
-        "support": 127
+        "f1_score": 0.5612,
+        "support": 78
       },
       "hardware_repair_store_service": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 1
+        "support": 14
       },
       "icloud_storage_backup": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 3
+        "support": 5
       },
       "ios_update_issue": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 33
+        "support": 23
       },
       "network_connectivity": {
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 4
+        "support": 11
       },
       "screen_display_touch": {
         "precision": 0.0,
@@ -84,7 +84,7 @@
         "precision": 0.0,
         "recall": 0.0,
         "f1_score": 0.0,
-        "support": 3
+        "support": 14
       }
     },
     "confusion_matrix": [
@@ -93,7 +93,7 @@
         0,
         0,
         0,
-        7,
+        14,
         0,
         0,
         0,
@@ -106,7 +106,98 @@
         0,
         0,
         0,
-        4,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        11,
         0,
         0,
         0,
@@ -132,98 +223,7 @@
         0,
         0,
         0,
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        127,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        33,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        3,
+        14,
         0,
         0,
         0,
@@ -248,65 +248,65 @@
       "screen_display_touch",
       "store_billing_subscription"
     ],
-    "accuracy": 0.98,
-    "macro_precision": 0.9697,
-    "macro_recall": 0.9971,
-    "macro_f1": 0.9816,
-    "weighted_f1": 0.9805,
+    "accuracy": 0.955,
+    "macro_precision": 0.9432,
+    "macro_recall": 0.9338,
+    "macro_f1": 0.9308,
+    "weighted_f1": 0.9546,
     "per_intent": {
       "app_performance_crash": {
         "precision": 1.0,
         "recall": 1.0,
         "f1_score": 1.0,
-        "support": 7
+        "support": 14
       },
       "apple_id_account_security": {
         "precision": 1.0,
         "recall": 1.0,
         "f1_score": 1.0,
-        "support": 4
+        "support": 6
       },
       "audio_call_accessory": {
         "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 1
+        "recall": 0.6,
+        "f1_score": 0.75,
+        "support": 5
       },
       "battery_power_charging": {
         "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 16
+        "recall": 0.931,
+        "f1_score": 0.9643,
+        "support": 29
       },
       "general_complaint_feedback": {
-        "precision": 1.0,
-        "recall": 0.9685,
-        "f1_score": 0.984,
-        "support": 127
+        "precision": 0.9744,
+        "recall": 0.9744,
+        "f1_score": 0.9744,
+        "support": 78
       },
       "hardware_repair_store_service": {
         "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 1
+        "recall": 0.8571,
+        "f1_score": 0.9231,
+        "support": 14
       },
       "icloud_storage_backup": {
-        "precision": 0.75,
+        "precision": 0.7143,
         "recall": 1.0,
-        "f1_score": 0.8571,
-        "support": 3
+        "f1_score": 0.8333,
+        "support": 5
       },
       "ios_update_issue": {
-        "precision": 0.9167,
+        "precision": 0.92,
         "recall": 1.0,
-        "f1_score": 0.9565,
-        "support": 33
+        "f1_score": 0.9583,
+        "support": 23
       },
       "network_connectivity": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 4
+        "precision": 0.8333,
+        "recall": 0.9091,
+        "f1_score": 0.8696,
+        "support": 11
       },
       "screen_display_touch": {
         "precision": 1.0,
@@ -315,15 +315,15 @@
         "support": 1
       },
       "store_billing_subscription": {
-        "precision": 1.0,
+        "precision": 0.9333,
         "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 3
+        "f1_score": 0.9655,
+        "support": 14
       }
     },
     "confusion_matrix": [
       [
-        7,
+        14,
         0,
         0,
         0,
@@ -337,7 +337,7 @@
       ],
       [
         0,
-        4,
+        6,
         0,
         0,
         0,
@@ -349,66 +349,66 @@
         0
       ],
       [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        123,
-        0,
-        1,
-        3,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         3,
         0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        76,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        12,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
         0,
         0,
         0
@@ -421,7 +421,7 @@
         0,
         0,
         0,
-        33,
+        23,
         0,
         0,
         0
@@ -434,8 +434,8 @@
         0,
         0,
         0,
-        0,
-        4,
+        1,
+        10,
         0,
         0
       ],
@@ -463,7 +463,7 @@
         0,
         0,
         0,
-        3
+        14
       ]
     ]
   },
@@ -482,65 +482,65 @@
       "screen_display_touch",
       "store_billing_subscription"
     ],
-    "accuracy": 0.98,
-    "macro_precision": 0.9697,
-    "macro_recall": 0.9971,
-    "macro_f1": 0.9816,
-    "weighted_f1": 0.9805,
+    "accuracy": 0.955,
+    "macro_precision": 0.9432,
+    "macro_recall": 0.9338,
+    "macro_f1": 0.9308,
+    "weighted_f1": 0.9546,
     "per_intent": {
       "app_performance_crash": {
         "precision": 1.0,
         "recall": 1.0,
         "f1_score": 1.0,
-        "support": 7
+        "support": 14
       },
       "apple_id_account_security": {
         "precision": 1.0,
         "recall": 1.0,
         "f1_score": 1.0,
-        "support": 4
+        "support": 6
       },
       "audio_call_accessory": {
         "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 1
+        "recall": 0.6,
+        "f1_score": 0.75,
+        "support": 5
       },
       "battery_power_charging": {
         "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 16
+        "recall": 0.931,
+        "f1_score": 0.9643,
+        "support": 29
       },
       "general_complaint_feedback": {
-        "precision": 1.0,
-        "recall": 0.9685,
-        "f1_score": 0.984,
-        "support": 127
+        "precision": 0.9744,
+        "recall": 0.9744,
+        "f1_score": 0.9744,
+        "support": 78
       },
       "hardware_repair_store_service": {
         "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 1
+        "recall": 0.8571,
+        "f1_score": 0.9231,
+        "support": 14
       },
       "icloud_storage_backup": {
-        "precision": 0.75,
+        "precision": 0.7143,
         "recall": 1.0,
-        "f1_score": 0.8571,
-        "support": 3
+        "f1_score": 0.8333,
+        "support": 5
       },
       "ios_update_issue": {
-        "precision": 0.9167,
+        "precision": 0.92,
         "recall": 1.0,
-        "f1_score": 0.9565,
-        "support": 33
+        "f1_score": 0.9583,
+        "support": 23
       },
       "network_connectivity": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 4
+        "precision": 0.8333,
+        "recall": 0.9091,
+        "f1_score": 0.8696,
+        "support": 11
       },
       "screen_display_touch": {
         "precision": 1.0,
@@ -549,15 +549,15 @@
         "support": 1
       },
       "store_billing_subscription": {
-        "precision": 1.0,
+        "precision": 0.9333,
         "recall": 1.0,
-        "f1_score": 1.0,
-        "support": 3
+        "f1_score": 0.9655,
+        "support": 14
       }
     },
     "confusion_matrix": [
       [
-        7,
+        14,
         0,
         0,
         0,
@@ -571,7 +571,7 @@
       ],
       [
         0,
-        4,
+        6,
         0,
         0,
         0,
@@ -583,66 +583,66 @@
         0
       ],
       [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        16,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        123,
-        0,
-        1,
-        3,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         3,
         0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        27,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        76,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        12,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
         0,
         0,
         0
@@ -655,7 +655,7 @@
         0,
         0,
         0,
-        33,
+        23,
         0,
         0,
         0
@@ -668,8 +668,8 @@
         0,
         0,
         0,
-        0,
-        4,
+        1,
+        10,
         0,
         0
       ],
@@ -697,7 +697,7 @@
         0,
         0,
         0,
-        3
+        14
       ]
     ]
   }
