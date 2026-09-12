@@ -10,15 +10,14 @@ A production-grade, evaluation-first machine learning classification and grounde
 
 ---
 
-## 🌟 Interactive Web UI Dashboard
+## 🌟 Interactive Web UI Dashboard (`app.py`)
 
-The project features a **lightweight, real-time Web UI Dashboard** requiring zero external dependencies:
+To view the live web interface and test customer support queries interactively:
 
 ```bash
-# Launch the Web Dashboard
 python app.py
 ```
-Open **[http://127.0.0.1:5000](http://127.0.0.1:5000)** in your browser.
+> **Frontend URL**: Open your browser at **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
 
 * **Live Agent Sandbox**: Click pre-set test queries (Battery Drain, Unauthorized Charge, Melted Cable Fire, iOS 11 Update Error) or test custom customer tweets with sub-10ms inference.
 * **Safety & Escalation Badges**: Live color-coded status badges, risk flags, and escalation reasons.
@@ -51,6 +50,9 @@ python tests/run_tests.py
 
 # 6. Test CLI interactive demo
 python -m hiver_agent.demo --message "My battery is draining from 100% to 10% in 30 minutes on my iPhone 8"
+
+# 7. Launch the Web UI Frontend
+python app.py
 ```
 
 ---
