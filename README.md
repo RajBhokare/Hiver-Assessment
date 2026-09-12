@@ -1,66 +1,162 @@
-# Hiver Assessment: Production ML Intent Classifier & Grounded AI Agent for @AppleSupport
+# Hiver AI Customer Support System — @AppleSupport Grounded Agent & Evaluation Benchmark
 
-[![Tests](https://img.shields.io/badge/tests-9%20passed-brightgreen.svg)](file:///tests/run_tests.py)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](file:///pyproject.toml)
-[![Zero Leakage](https://img.shields.io/badge/leakage-0.00%25-success.svg)](file:///report/final_submission_report.md)
-[![Safety Floor](https://img.shields.io/badge/false__auto__handle-0.00%25-success.svg)](file:///results/metrics/evaluation_summary.md)
+[![Tests](https://img.shields.io/badge/tests-9%20passed-brightgreen.svg)](tests/run_tests.py)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](pyproject.toml)
+[![Zero Leakage](https://img.shields.io/badge/leakage-0.00%25-success.svg)](report/final_submission_report.md)
+[![Safety Floor](https://img.shields.io/badge/false__auto__handle-0.00%25-success.svg)](results/metrics/evaluation_summary.md)
+[![License](https://img.shields.io/badge/license-MIT-purple.svg)](LICENSE)
 
-A rigorous, evaluation-first machine learning classification and grounded AI support assistant designed for high-volume customer service interactions on `@AppleSupport` (Twitter Customer Support dataset).
+A production-grade, evaluation-first machine learning classification and grounded AI support assistant designed for high-volume customer service interactions on `@AppleSupport` (Twitter Customer Support dataset).
 
 ---
 
-## 1. Quickstart & Reproduction (< 15 Minutes)
+## 🌟 Interactive Web UI Dashboard
 
-You can reproduce all benchmarks, baselines, and test suites with standard Python commands or via `make` / `run.ps1`:
+The project features a **lightweight, real-time Web UI Dashboard** requiring zero external dependencies:
+
+```bash
+# Launch the Web Dashboard
+python app.py
+```
+Open **[http://127.0.0.1:5000](http://127.0.0.1:5000)** in your browser.
+
+* **Live Agent Sandbox**: Click pre-set test queries (Battery Drain, Unauthorized Charge, Melted Cable Fire, iOS 11 Update Error) or test custom customer tweets with sub-10ms inference.
+* **Safety & Escalation Badges**: Live color-coded status badges, risk flags, and escalation reasons.
+* **Grounded Drafts**: Twitter-compliant draft replies (<280 chars) with 1-click clipboard copy.
+* **Historical Evidence Carousel**: View top-3 retrieved historical interactions and cosine similarity scores.
+* **Benchmark & Ablations Viewer**: Side-by-side metric tables and failure mode explorer.
+
+---
+
+## ⚡ Quickstart & Reproduction (< 15 Minutes)
+
+You can reproduce all benchmarks, baselines, and test suites with standard Python commands or via `make` / `.\run.ps1`:
 
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 
-# 2. Prepare data and generate zero-leakage splits (Connected Components)
+# 2. Run data preparation & zero-leakage connected-component splits
 python scripts/prepare_applesupport.py
 
-# 3. Train Baseline 1 (Majority) and Baseline 2 (TF-IDF + Logistic Reg) & evaluate on test split
+# 3. Train baselines and generate test metrics
 python scripts/evaluate_baselines.py
 
-# 4. Run the complete evaluation harness across all models, safety metrics, and ablations
+# 4. Run the comprehensive evaluation harness across all models and ablations
 python scripts/evaluate_golden.py --fallback_test_sample
 
-# 5. Run full unit and integration test suite
+# 5. Run full test suite (9/9 tests pass)
 python tests/run_tests.py
 
-# 6. Run CLI interactive demo
-python -m hiver_agent.demo --message "My battery drops from 80% to 20% in 15 minutes while on iOS 11"
+# 6. Test CLI interactive demo
+python -m hiver_agent.demo --message "My battery is draining from 100% to 10% in 30 minutes on my iPhone 8"
 ```
 
 ---
 
-## 2. Core Architectural Principles
+## 🏗️ Architecture & Pipeline
 
-- **Evaluation-First, Not Demo-First**: Every single number reported originates directly from script executions on held-out evaluation splits.
-- **Zero Train/Test Leakage**: Partitioned using bipartite **Connected Components** on `(user_id, conversation_id)` guaranteeing $0.00\%$ user and conversation leakage across train, val, and test splits.
-- **Strict Grounding & Safety Floor**: Responses are strictly limited to verified canonical Apple Support troubleshooting and official domains (`iforgot.apple.com`, `reportaproblem.apple.com`, `getsupport.apple.com`).
-- **Zero Hallucination / Fabrication**: Never claims to execute backend refunds, unlock accounts, or modify Apple databases.
-- **Sub-10ms CPU Latency**: Lightweight local TF-IDF n-gram classification and in-memory vector nearest-neighbor retrieval.
+```
+                                  [ Customer Inbound Tweet ]
+                                              │
+                                              ▼
+                             [ 1. Preprocessing & Cleaning ]
+                                              │
+                                              ▼
+                    ┌─────────────────────────┴─────────────────────────┐
+                    ▼                                                   ▼
+       [ 2. Intent Classifier ]                            [ 3. Local Retriever ]
+       TF-IDF → Logistic Regression                        TF-IDF & Cosine Nearest Neighbors
+       (Predicts 1 of 11 intents + Conf)                   (Top-3 Historical Train Pairs)
+                    │                                                   │
+                    └─────────────────────────┬─────────────────────────┘
+                                              │
+                                              ▼
+                           [ 4. Grounded Response Generator ]
+                           • Injects Canonical Knowledge & Evidence
+                           • Enforces Strict Twitter Limit (<280 chars)
+                           • Policy & Safety Guardrails
+                                              │
+                                              ▼
+                             [ 5. Escalation & Safety Engine ]
+                             • Physical Hazard Filter (Fire/Overheating)
+                             • Auth / Billing / Legal Hard Triggers
+                             • Confidence (<0.50) & Retrieval (<0.30) Checks
+                                              │
+                     ┌────────────────────────┴────────────────────────┐
+                     ▼                                                 ▼
+             [ AUTO-HANDLE: TRUE ]                             [ AUTO-HANDLE: FALSE ]
+             Publish Draft Response to Twitter                 Route to Tier-2 Specialist with
+                                                               Reason & Risk Flags
+```
 
 ---
 
-## 3. Measured Results Summary
+## 📊 Measured Benchmark Results
 
-| Model / Configuration | Intent Macro-F1 | Intent Accuracy | Escalation Precision | Escalation Recall | False Auto-Handling Rate (Safety Risk) | Overall Reply Quality (1–5) | Critical Error Rate |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Baseline 1: Majority Class** | 0.0720 | 0.6555 | 0.2857 | 0.5000 | 50.00% | N/A | N/A |
-| **Baseline 2: TF-IDF + Logistic Reg** | **0.9292** | **0.9747** | N/A | N/A | N/A | N/A | N/A |
-| **Ablation A: No Retrieval** | **0.9292** | **0.9747** | 0.1860 | 1.0000 | **0.00%** | 4.59 / 5.0 | **0.0%** |
-| **Ablation B: Naive Retrieval (No Esc)**| **0.9292** | **0.9747** | 0.0000 | 0.0000 | 100.00% | 4.57 / 5.0 | **4.0%** |
-| **Final AI Agent (Full System)** | **0.9292** | **0.9747** | 0.1860 | **1.0000** | **0.00%** | **4.59 / 5.0** | **0.0%** |
+*All reported numbers originate strictly from real script executions on held-out evaluation splits.*
 
-> **Key Takeaway**: The Final AI Agent achieves a **0.00% False Auto-Handling Rate**, guaranteeing 100% human escalation on dangerous safety, legal, and private account credentials.
+### 1. Intent Classification Performance (Held-out Test Split, $N=15,326$)
+
+| Model | Accuracy | Macro Precision | Macro Recall | Macro F1 | Weighted F1 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Baseline 1: Majority Class** | 0.6555 | 0.0596 | 0.0909 | **0.0720** | 0.5190 |
+| **Baseline 2: TF-IDF + Logistic Reg** | **0.9747** | **0.9037** | **0.9603** | **0.9292** | **0.9752** |
+| **Final AI Agent Intent Module** | **0.9747** | **0.9037** | **0.9603** | **0.9292** | **0.9752** |
+
+### 2. Escalation & Safety Metrics
+
+| Strategy / Model | Escalation Precision | Escalation Recall | Escalation F1 | False Auto-Handling Rate (Safety Risk) | False Escalation Rate |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Trivial Escalation Strategy** | 0.2857 | 0.5000 | 0.3636 | **50.00%** | 5.21% |
+| **Final Agent Escalation Policy** | 0.1860 | **1.0000** | 0.3137 | **0.00% (Safety Floor)** | 18.23% |
+
+> **Critical Safety Metric**: The Final AI Agent achieved a **0.00% False Auto-Handling Rate**, successfully intercepting 100% of high-risk security, billing, and safety inquiries.
+
+### 3. 3-Tier Ablation Study (Response Quality & Guardrails)
+
+| Configuration | Correctness | Grounding | Actionability | Brand Consistency | Safety | Conciseness | Overall Mean (1–5) | % $\ge$ 4.0 | Critical Error Rate |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **A: No Retrieval** | 4.74 | 5.00 | 3.46 | 4.36 | 5.00 | 5.00 | **4.59** | 100.0% | **0.0%** |
+| **B: Retrieval, No Escalation** | 4.74 | 5.00 | 3.46 | 4.36 | 4.88 | 5.00 | **4.57** | 96.0% | **4.0% (Unsafe Autoreplies)** |
+| **C: Full Agent (Retr + Esc)** | 4.74 | 5.00 | 3.46 | 4.36 | 5.00 | 5.00 | **4.59** | 100.0% | **0.0% (Zero Errors)** |
 
 ---
 
-## 4. Project Layout
+## 🏷️ Frozen Intent Taxonomy (11 Classes)
+
+Derived empirically from 103,527 unique customer pairs in `twcs.csv`:
+
+| # | Intent Key | Category Scope | Frequency in Dataset | Typical Action | Escalation Policy |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | `ios_update_issue` | OS upgrade failures, update errors, version queries | 31,658 (30.6%) | Update KB article / Force restart | Low |
+| 2 | `app_performance_crash` | App crashing, keyboard lag, UI freezing, sluggishness | 11,227 (10.8%) | Force close / Reinstall app | Low |
+| 3 | `battery_power_charging` | Rapid drain, charging port failure, cable faults, overheating | 10,464 (10.1%) | Settings > Battery audit / DM | Moderate–High |
+| 4 | `apple_id_account_security`| Forgotten password, 2FA code missing, locked account | 5,435 (5.3%) | `iforgot.apple.com` / Sec desk | **Mandatory Human** |
+| 5 | `screen_display_touch` | Display lines, black screen, touch digitizer failure | 5,167 (5.0%) | Force restart / Repair quote | Moderate–High |
+| 6 | `general_complaint_feedback`| Non-technical venting, brand sentiment, switching threats | 4,631 (4.5%) | Empathy statement / DM intake | Moderate |
+| 7 | `network_connectivity` | Wi-Fi disconnects, Bluetooth pairing, "No Service" LTE | 4,184 (4.0%) | Reset Network Settings | Low–Moderate |
+| 8 | `icloud_storage_backup` | iCloud sync failure, "Storage Almost Full", photo backup | 3,522 (3.4%) | Manage Storage guide | Low–Moderate |
+| 9 | `store_billing_subscription`| In-app charges, unwanted subscriptions, refund inquiries | 3,211 (3.1%) | `reportaproblem.apple.com` | **Mandatory Human** |
+| 10 | `audio_call_accessory` | Low call volume, mic issues, AirPods disconnection | 2,343 (2.3%) | Settings > Audio balance | Moderate |
+| 11 | `hardware_repair_store_service`| Genius Bar booking, screen replacement cost, AppleCare | 1,908 (1.8%) | `getsupport.apple.com` | **Mandatory Human** |
+
+---
+
+## 🛡️ Top 5 Real Production Failure Modes
+
+Documented in detail in [report/failure_analysis.md](report/failure_analysis.md) using authentic tweet examples:
+
+1. **Active Thermal Event / Fire** (Tweet `1805403`): Cable melted/ignited on desk $\to$ Fixed via zero-tolerance emergency thermal interceptor forcing `auto_handle = False`.
+2. **Repeat 4-Tier Contact Blindness** (Tweet `101304`): Customer already contacted 4 senior techs $\to$ Fixed via repeat-attempt pattern detector routing directly to Senior Relations.
+3. **2FA Authentication Deadlock** (Tweet `1715358`): Customer lost trusted 2FA hardware $\to$ Fixed via sub-intent routing to `icloud.com/find` and human security desk.
+4. **Impending Legal Threat** (Tweet `249171`): Customer threatened attorney involvement $\to$ Fixed via legal compliance filter routing to Executive Legal Desk.
+5. **Multi-Intent Damage Entanglement** (Tweet `98840`): Customer experienced drop + TrueDepth camera failure + fairness question $\to$ Fixed via multi-aspect risk escalation.
+
+---
+
+## 📁 Repository Structure
 
 ```
 .
@@ -69,7 +165,8 @@ python -m hiver_agent.demo --message "My battery drops from 80% to 20% in 15 min
 ├── pyproject.toml                # Build & packaging configuration
 ├── requirements.txt              # Production runtime dependencies
 ├── requirements-dev.txt          # Test & linting dependencies
-├── README.md                     # Project overview and reproduction guide
+├── app.py                        # Web UI entrypoint (http://127.0.0.1:5000)
+├── README.md                     # Project documentation
 │
 ├── configs/
 │   └── default_config.yaml       # Hyperparameters, paths, seeds, split ratios
@@ -106,6 +203,7 @@ python -m hiver_agent.demo --message "My battery drops from 80% to 20% in 15 min
 │   ├── schema.py                 # Pydantic V2 structured output schema (AgentDecision)
 │   ├── agent.py                  # End-to-end HiverAgent orchestrator
 │   ├── demo.py                   # CLI demo interface
+│   ├── server.py                 # Lightweight HTTP server & Web UI
 │   ├── baselines/
 │   │   ├── majority_baseline.py  # Baseline 1: Majority Class & Trivial Escalation
 │   │   └── tfidf_logistic.py     # Baseline 2: TF-IDF + Logistic Regression
@@ -114,7 +212,7 @@ python -m hiver_agent.demo --message "My battery drops from 80% to 20% in 15 min
 │   └── generation/
 │       └── grounded_generator.py # Grounded reply generator & safety guardrails
 │
-├── src/                          # Core Data & Evaluation Modules
+├── src/                          # Core Pipeline Modules
 │   ├── config.py                 # Configuration loader
 │   ├── data/
 │   │   ├── labeler.py            # Frozen intent taxonomy rule classifier
@@ -143,20 +241,19 @@ python -m hiver_agent.demo --message "My battery drops from 80% to 20% in 15 min
 │   └── test_metrics.py           # Verification of metric calculation accuracy
 │
 └── report/                       # Deliverable Engineering Reports
-    ├── intent_taxonomy_proposal.md # 11-class empirical intent taxonomy proposal
-    ├── final_submission_report.md  # Complete 6-page technical submission report
-    ├── judge_validation.md         # Frozen judge evaluation methodology & agreement
+    ├── final_submission_report.md  # Complete 14-section technical submission report
+    ├── final_review.md             # 10 hardest technical interview questions & answers
     ├── failure_analysis.md         # In-depth analysis of top 5 real failure modes
-    └── final_review.md             # 10 hardest technical interview questions & answers
+    ├── judge_validation.md         # Frozen judge evaluation methodology & agreement
+    └── intent_taxonomy_proposal.md # 11-class empirical intent taxonomy proposal
 ```
 
 ---
 
-## 5. Deliverable Reports
+## 📑 Detailed Engineering Reports
 
-1. **Final Engineering Submission Report**: [report/final_submission_report.md](file:///report/final_submission_report.md)
-2. **Technical Interview Defense (10 Hardest Questions)**: [report/final_review.md](file:///report/final_review.md)
-3. **Failure Mode Analysis & Safety Audit**: [report/failure_analysis.md](file:///report/failure_analysis.md)
-4. **Automated Judge Validation Methodology**: [report/judge_validation.md](file:///report/judge_validation.md)
-5. **Intent Taxonomy Proposal**: [report/intent_taxonomy_proposal.md](file:///report/intent_taxonomy_proposal.md)
-6. **Benchmark Metrics Markdown Report**: [results/metrics/evaluation_summary.md](file:///results/metrics/evaluation_summary.md)
+1. **Comprehensive Final Engineering Report**: [report/final_submission_report.md](report/final_submission_report.md)
+2. **Technical Interview Defense (10 Hardest Questions)**: [report/final_review.md](report/final_review.md)
+3. **Failure Mode Analysis & Safety Audit**: [report/failure_analysis.md](report/failure_analysis.md)
+4. **Automated Judge Validation Methodology**: [report/judge_validation.md](report/judge_validation.md)
+5. **Intent Taxonomy Proposal**: [report/intent_taxonomy_proposal.md](report/intent_taxonomy_proposal.md)
