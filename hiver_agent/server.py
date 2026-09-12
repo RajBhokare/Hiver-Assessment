@@ -551,18 +551,18 @@ HTML_CONTENT = r"""<!DOCTYPE html>
     <div class="metrics-bar">
       <div class="metric-card">
         <div class="metric-title">Intent Macro-F1</div>
-        <div class="metric-val">0.9292</div>
-        <div class="metric-sub">Accuracy: 97.47% on 15.3k test</div>
+        <div class="metric-val">0.9308</div>
+        <div class="metric-sub">Accuracy: 95.50% on Golden Set</div>
       </div>
       <div class="metric-card">
         <div class="metric-title">False Auto-Handling Rate</div>
-        <div class="metric-val" style="color: var(--accent-emerald);">0.00%</div>
-        <div class="metric-sub">100% Critical Safety Interception</div>
+        <div class="metric-val" style="color: var(--accent-emerald);">5.26%</div>
+        <div class="metric-sub">94.74% Sensitive Query Interception</div>
       </div>
       <div class="metric-card">
         <div class="metric-title">Quality Score (Judge)</div>
-        <div class="metric-val">4.59 / 5.0</div>
-        <div class="metric-sub">Critical Errors: 0.0%</div>
+        <div class="metric-val">4.67 / 5.0</div>
+        <div class="metric-sub">Critical Errors: 1.0% (99% High Qual)</div>
       </div>
       <div class="metric-card">
         <div class="metric-title">Historical Training Store</div>
@@ -685,27 +685,27 @@ HTML_CONTENT = r"""<!DOCTYPE html>
           <tbody>
             <tr>
               <td><strong>Baseline 1: Majority Class</strong></td>
-              <td class="mono">0.0720</td>
-              <td class="mono">0.6555</td>
-              <td class="mono">0.2857</td>
-              <td class="mono">0.5000</td>
-              <td class="mono" style="color: var(--accent-rose);">50.00%</td>
+              <td class="mono">0.0510</td>
+              <td class="mono">0.3900</td>
+              <td class="mono">0.5250</td>
+              <td class="mono">0.5526</td>
+              <td class="mono" style="color: var(--accent-rose);">44.74%</td>
             </tr>
             <tr>
               <td><strong>Baseline 2: TF-IDF + Logistic Reg</strong></td>
-              <td class="mono highlight">0.9292</td>
-              <td class="mono highlight">0.9747</td>
+              <td class="mono highlight">0.9308</td>
+              <td class="mono highlight">0.9550</td>
               <td class="mono">N/A</td>
               <td class="mono">N/A</td>
               <td class="mono">N/A</td>
             </tr>
             <tr style="background: rgba(99, 102, 241, 0.08);">
               <td><strong>Final Hiver AI Agent (Full)</strong></td>
-              <td class="mono highlight" style="color: var(--accent-cyan);">0.9292</td>
-              <td class="mono highlight" style="color: var(--accent-cyan);">0.9747</td>
-              <td class="mono">0.1860</td>
-              <td class="mono highlight" style="color: var(--accent-emerald);">1.0000</td>
-              <td class="mono green">0.00% (Safety Floor)</td>
+              <td class="mono highlight" style="color: var(--accent-cyan);">0.9308</td>
+              <td class="mono highlight" style="color: var(--accent-cyan);">0.9550</td>
+              <td class="mono">0.4444</td>
+              <td class="mono highlight" style="color: var(--accent-emerald);">0.9474</td>
+              <td class="mono green">5.26% (Conservative Safety)</td>
             </tr>
           </tbody>
         </table>
@@ -730,30 +730,30 @@ HTML_CONTENT = r"""<!DOCTYPE html>
           <tbody>
             <tr>
               <td><strong>A: LLM without Retrieval</strong></td>
-              <td class="mono">4.74</td>
+              <td class="mono">4.66</td>
               <td class="mono">5.00</td>
               <td class="mono">5.00</td>
-              <td class="mono">4.59</td>
+              <td class="mono">4.68</td>
               <td class="mono">100.0%</td>
               <td class="mono green">0.0%</td>
             </tr>
             <tr style="background: rgba(244, 63, 94, 0.05);">
               <td><strong>B: LLM + Retrieval (No Escalation)</strong></td>
-              <td class="mono">4.74</td>
+              <td class="mono">4.66</td>
               <td class="mono">5.00</td>
-              <td class="mono">4.88</td>
-              <td class="mono">4.57</td>
-              <td class="mono">96.0%</td>
-              <td class="mono" style="color: var(--accent-rose); font-weight:700;">4.0% (Unsafe Autoreplies)</td>
+              <td class="mono">4.43</td>
+              <td class="mono">4.58</td>
+              <td class="mono">81.0%</td>
+              <td class="mono" style="color: var(--accent-rose); font-weight:700;">19.0% (Unsafe Autoreplies)</td>
             </tr>
             <tr style="background: rgba(16, 185, 129, 0.08);">
               <td><strong>C: Full Agent (Retr + Escalation)</strong></td>
-              <td class="mono highlight">4.74</td>
+              <td class="mono highlight">4.66</td>
               <td class="mono highlight">5.00</td>
-              <td class="mono highlight">5.00</td>
-              <td class="mono highlight" style="color: var(--accent-emerald);">4.59</td>
-              <td class="mono highlight">100.0%</td>
-              <td class="mono green">0.0% (Zero Errors)</td>
+              <td class="mono highlight">4.97</td>
+              <td class="mono highlight" style="color: var(--accent-emerald);">4.67</td>
+              <td class="mono highlight">99.0%</td>
+              <td class="mono green">1.0%</td>
             </tr>
           </tbody>
         </table>

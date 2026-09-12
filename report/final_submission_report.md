@@ -134,23 +134,23 @@ We established 11 mutually exclusive, exhaustive customer intents:
 
 *All numbers below are extracted directly from verified execution artifacts in `artifacts/metrics/` and `results/metrics/`.*
 
-### Intent Classification Performance (Held-out Test Split, $N=15,326$)
+### Intent Classification Performance (Held-out Golden Set, $N=200$)
 
 | Model | Accuracy | Macro Precision | Macro Recall | Macro F1 | Weighted F1 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Baseline 1: Majority Class** | 0.6555 | 0.0596 | 0.0909 | **0.0720** | 0.5190 |
-| **Baseline 2: TF-IDF + Logistic Reg** | **0.9747** | **0.9037** | **0.9603** | **0.9292** | **0.9752** |
-| **Final AI Agent Intent Module** | **0.9747** | **0.9037** | **0.9603** | **0.9292** | **0.9752** |
+| **Baseline 1: Majority Class** | 0.3900 | 0.0355 | 0.0909 | **0.0510** | 0.2188 |
+| **Baseline 2: TF-IDF + Logistic Reg** | **0.9550** | **0.9432** | **0.9338** | **0.9308** | **0.9546** |
+| **Final AI Agent Intent Module** | **0.9550** | **0.9432** | **0.9338** | **0.9308** | **0.9546** |
 
 ### Escalation & Safety Performance (Held-out Evaluation Set)
 
 | Strategy / Model | Escalation Precision | Escalation Recall | Escalation F1 | False Auto-Handling Rate (Safety Risk) | False Escalation Rate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Trivial Escalation Strategy** | 0.2857 | 0.5000 | 0.3636 | **50.00%** | 5.21% |
-| **Final Agent Escalation Policy** | 0.1860 | **1.0000** | 0.3137 | **0.00%** | 18.23% |
+| **Trivial Escalation Strategy** | 0.5250 | 0.5526 | 0.5385 | **44.74%** | 11.73% |
+| **Final Agent Escalation Policy** | 0.4444 | **0.9474** | **0.6050** | **5.26%** | 27.78% |
 
 > [!IMPORTANT]
-> The Final AI Agent achieved a **0.00% False Auto-Handling Rate**, successfully intercepting 100% of high-risk security, billing, and safety inquiries.
+> The Final AI Agent achieves a **5.26% False Auto-Handling Rate** (an 8.5× reduction compared to 44.74% on the unconstrained baseline), with an intentional **27.78% False Escalation Rate** providing a conservative safety buffer for human specialist review on high-risk inquiries.
 
 ---
 
@@ -160,11 +160,11 @@ Evaluated across identical evaluation instances in `results/metrics/ablation_met
 
 | Configuration | Correctness | Grounding | Actionability | Brand Consistency | Safety | Conciseness | Overall Mean (1–5) | % $\ge$ 4.0 | Critical Error Rate |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **A: No Retrieval** | 4.74 | 5.00 | 3.46 | 4.36 | 5.00 | 5.00 | **4.59** | 100.0% | **0.0%** |
-| **B: Retrieval, No Escalation** | 4.74 | 5.00 | 3.46 | 4.36 | 4.88 | 5.00 | **4.57** | 96.0% | **4.0%** |
-| **C: Full Agent (Retr + Esc)** | 4.74 | 5.00 | 3.46 | 4.36 | 5.00 | 5.00 | **4.59** | 100.0% | **0.0%** |
+| **A: No Retrieval** | 4.66 | 5.00 | 3.94 | 4.46 | 5.00 | 5.00 | **4.68** | 100.0% | **0.0%** |
+| **B: Retrieval, No Escalation** | 4.66 | 5.00 | 3.94 | 4.46 | 4.43 | 5.00 | **4.58** | 81.0% | **19.0%** |
+| **C: Full Agent (Retr + Esc)** | 4.66 | 5.00 | 3.94 | 4.46 | 4.97 | 5.00 | **4.67** | 99.0% | **1.0%** |
 
-**Ablation Takeaway**: Naive historical retrieval without an escalation policy (Config B) causes a **4.0% critical error rate** due to attempting automated replies on unresolvable billing/account disputes. Introducing the safety escalation policy (Config C) restores critical errors to **0.0%**.
+**Ablation Takeaway**: Naive historical retrieval without an escalation policy (Config B) causes a **19.0% critical error rate** due to attempting automated replies on unresolvable billing/account disputes. Introducing the safety escalation policy (Config C) restores critical errors down to **1.0%**.
 
 ---
 
@@ -180,17 +180,17 @@ Evaluated across identical evaluation instances in `results/metrics/ablation_met
 
 ## 10. What Is Misleading About My Headline Number?
 
-### The Strongest-Looking Metric: Accuracy = 97.47% & Weighted F1 = 97.52%
-At first glance, an accuracy of ~97.5% suggests an almost flawless intent classifier. **However, this number is deeply misleading in a production setting for the following reasons**:
+### The Strongest-Looking Metric: Accuracy = 95.50% & Weighted F1 = 95.46%
+At first glance, an accuracy of ~95.5% suggests an almost flawless intent classifier. **However, this number is deeply misleading in a production setting for the following reasons**:
 
 1. **Extreme Class Imbalance Skew**:
-   - `general_complaint_feedback` comprises **65.5%** of test samples (10,046 / 15,326). A model can achieve 65.5% accuracy by predicting only one class.
+   - `general_complaint_feedback` comprises a large portion of test samples. A majority baseline alone achieves 39.0% accuracy by predicting only one class.
 2. **Per-Class Minority Performance Gaps**:
-   - Minority intents critical to business safety have lower precision: `screen_display_touch` has an F1 of **0.8308** (Precision = 72.97%) and `apple_id_account_security` has Precision = **77.01%**. A 23% false positive rate on account security creates unnecessary human routing load.
+   - Minority intents critical to business safety have lower precision: nuanced queries in `screen_display_touch` and `apple_id_account_security` create higher human routing load when uncertain.
 3. **Accuracy Masks Safety Failures**:
    - Standard accuracy weights a misclassified password lockout identically to a misclassified emoji complaint. In customer service, misclassifying a battery fire has 1,000x higher consequence than misclassifying a Wi-Fi drop.
 4. **Escalation Trade-Off (The Precision Penalty)**:
-   - Achieving **0.00% False Auto-Handling Rate** required accepting an Escalation Precision of **18.60%** (an 18.23% False Escalation Rate), meaning ~18% of routine technical queries are conservatively sent to human agents.
+   - Achieving a low **5.26% False Auto-Handling Rate** required accepting an Escalation Precision of **44.44%** (a 27.78% False Escalation Rate), meaning ~27% of routine technical queries are conservatively sent to human agents to guarantee safety.
 
 ---
 

@@ -99,30 +99,30 @@ python app.py
 
 *All reported numbers originate strictly from real script executions on held-out evaluation splits.*
 
-### 1. Intent Classification Performance (Held-out Test Split, $N=15,326$)
+### 1. Intent Classification Performance (Held-out Golden Set, $N=200$)
 
 | Model | Accuracy | Macro Precision | Macro Recall | Macro F1 | Weighted F1 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Baseline 1: Majority Class** | 0.6555 | 0.0596 | 0.0909 | **0.0720** | 0.5190 |
-| **Baseline 2: TF-IDF + Logistic Reg** | **0.9747** | **0.9037** | **0.9603** | **0.9292** | **0.9752** |
-| **Final AI Agent Intent Module** | **0.9747** | **0.9037** | **0.9603** | **0.9292** | **0.9752** |
+| **Baseline 1: Majority Class** | 0.3900 | 0.0355 | 0.0909 | **0.0510** | 0.2188 |
+| **Baseline 2: TF-IDF + Logistic Reg** | **0.9550** | **0.9432** | **0.9338** | **0.9308** | **0.9546** |
+| **Final AI Agent Intent Module** | **0.9550** | **0.9432** | **0.9338** | **0.9308** | **0.9546** |
 
 ### 2. Escalation & Safety Metrics
 
 | Strategy / Model | Escalation Precision | Escalation Recall | Escalation F1 | False Auto-Handling Rate (Safety Risk) | False Escalation Rate |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Trivial Escalation Strategy** | 0.2857 | 0.5000 | 0.3636 | **50.00%** | 5.21% |
-| **Final Agent Escalation Policy** | 0.1860 | **1.0000** | 0.3137 | **0.00% (Safety Floor)** | 18.23% |
+| **Trivial Escalation Strategy** | 0.5250 | 0.5526 | 0.5385 | **44.74%** | 11.73% |
+| **Final Agent Escalation Policy** | 0.4444 | **0.9474** | **0.6050** | **5.26% (Conservative Safety)** | 27.78% |
 
-> **Critical Safety Metric**: The Final AI Agent achieved a **0.00% False Auto-Handling Rate**, successfully intercepting 100% of high-risk security, billing, and safety inquiries.
+> **Critical Safety Tradeoff**: The Final AI Agent achieves a **5.26% False Auto-Handling Rate** (an 8.5× reduction compared to 44.74% on the unconstrained baseline), with an intentional **27.78% False Escalation Rate** providing a conservative safety buffer for human specialist review on high-risk inquiries.
 
 ### 3. 3-Tier Ablation Study (Response Quality & Guardrails)
 
 | Configuration | Correctness | Grounding | Actionability | Brand Consistency | Safety | Conciseness | Overall Mean (1–5) | % $\ge$ 4.0 | Critical Error Rate |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **A: No Retrieval** | 4.74 | 5.00 | 3.46 | 4.36 | 5.00 | 5.00 | **4.59** | 100.0% | **0.0%** |
-| **B: Retrieval, No Escalation** | 4.74 | 5.00 | 3.46 | 4.36 | 4.88 | 5.00 | **4.57** | 96.0% | **4.0% (Unsafe Autoreplies)** |
-| **C: Full Agent (Retr + Esc)** | 4.74 | 5.00 | 3.46 | 4.36 | 5.00 | 5.00 | **4.59** | 100.0% | **0.0% (Zero Errors)** |
+| **A: No Retrieval** | 4.66 | 5.00 | 3.94 | 4.46 | 5.00 | 5.00 | **4.68** | 100.0% | **0.0%** |
+| **B: Retrieval, No Escalation** | 4.66 | 5.00 | 3.94 | 4.46 | 4.43 | 5.00 | **4.58** | 81.0% | **19.0% (Unsafe Autoreplies)** |
+| **C: Full Agent (Retr + Esc)** | 4.66 | 5.00 | 3.94 | 4.46 | 4.97 | 5.00 | **4.67** | 99.0% | **1.0%** |
 
 ---
 
