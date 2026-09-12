@@ -1,0 +1,261 @@
+{
+  "sample_count": 15326,
+  "classes": [
+    "app_performance_crash",
+    "apple_id_account_security",
+    "audio_call_accessory",
+    "battery_power_charging",
+    "general_complaint_feedback",
+    "hardware_repair_store_service",
+    "icloud_storage_backup",
+    "ios_update_issue",
+    "network_connectivity",
+    "screen_display_touch",
+    "store_billing_subscription"
+  ],
+  "accuracy": 0.9747,
+  "macro_precision": 0.9037,
+  "macro_recall": 0.9603,
+  "macro_f1": 0.9292,
+  "weighted_f1": 0.9752,
+  "per_class_f1": {
+    "app_performance_crash": 0.9531,
+    "apple_id_account_security": 0.8446,
+    "audio_call_accessory": 0.9096,
+    "battery_power_charging": 0.9768,
+    "general_complaint_feedback": 0.9868,
+    "hardware_repair_store_service": 0.8838,
+    "icloud_storage_backup": 0.9513,
+    "ios_update_issue": 0.957,
+    "network_connectivity": 0.9697,
+    "screen_display_touch": 0.8308,
+    "store_billing_subscription": 0.9579
+  },
+  "confusion_matrix": [
+    [
+      539,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      144,
+      0,
+      0,
+      3,
+      0,
+      4,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      156,
+      0,
+      5,
+      1,
+      1,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      6,
+      1200,
+      13,
+      2,
+      2,
+      10,
+      11,
+      5,
+      0
+    ],
+    [
+      16,
+      40,
+      9,
+      0,
+      9839,
+      34,
+      4,
+      79,
+      1,
+      13,
+      11
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      5,
+      194,
+      2,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      0,
+      0,
+      0,
+      244,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      21,
+      1,
+      0,
+      0,
+      20,
+      0,
+      0,
+      1746,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      3,
+      0,
+      3,
+      6,
+      448,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      54,
+      0
+    ],
+    [
+      0,
+      1,
+      2,
+      5,
+      6,
+      3,
+      1,
+      2,
+      2,
+      0,
+      375
+    ]
+  ],
+  "full_classification_report": {
+    "app_performance_crash": {
+      "precision": 0.922945205479452,
+      "recall": 0.9853747714808044,
+      "f1-score": 0.9531388152077808,
+      "support": 547.0
+    },
+    "apple_id_account_security": {
+      "precision": 0.7700534759358288,
+      "recall": 0.935064935064935,
+      "f1-score": 0.844574780058651,
+      "support": 154.0
+    },
+    "audio_call_accessory": {
+      "precision": 0.8863636363636364,
+      "recall": 0.9341317365269461,
+      "f1-score": 0.9096209912536443,
+      "support": 167.0
+    },
+    "battery_power_charging": {
+      "precision": 0.995850622406639,
+      "recall": 0.9584664536741214,
+      "f1-score": 0.9768009768009768,
+      "support": 1252.0
+    },
+    "general_complaint_feedback": {
+      "precision": 0.9942400970088925,
+      "recall": 0.9793947839936293,
+      "f1-score": 0.9867616086651289,
+      "support": 10046.0
+    },
+    "hardware_repair_store_service": {
+      "precision": 0.8290598290598291,
+      "recall": 0.9463414634146341,
+      "f1-score": 0.8838268792710706,
+      "support": 205.0
+    },
+    "icloud_storage_backup": {
+      "precision": 0.9348659003831418,
+      "recall": 0.9682539682539683,
+      "f1-score": 0.9512670565302144,
+      "support": 252.0
+    },
+    "ios_update_issue": {
+      "precision": 0.9387096774193548,
+      "recall": 0.975964225824483,
+      "f1-score": 0.9569745135653603,
+      "support": 1789.0
+    },
+    "network_connectivity": {
+      "precision": 0.9676025917926566,
+      "recall": 0.9718004338394793,
+      "f1-score": 0.9696969696969697,
+      "support": 461.0
+    },
+    "screen_display_touch": {
+      "precision": 0.7297297297297297,
+      "recall": 0.9642857142857143,
+      "f1-score": 0.8307692307692308,
+      "support": 56.0
+    },
+    "store_billing_subscription": {
+      "precision": 0.9715025906735751,
+      "recall": 0.9445843828715366,
+      "f1-score": 0.9578544061302682,
+      "support": 397.0
+    },
+    "accuracy": 0.9747487929009526,
+    "macro avg": {
+      "precision": 0.903720305113885,
+      "recall": 0.960332988111841,
+      "f1-score": 0.9292078389044817,
+      "support": 15326.0
+    },
+    "weighted avg": {
+      "precision": 0.9763744132000707,
+      "recall": 0.9747487929009526,
+      "f1-score": 0.9752089840560789,
+      "support": 15326.0
+    }
+  },
+  "model_name": "Baseline_2_TFIDF_LogisticRegression"
+}

@@ -1,0 +1,1198 @@
+{
+  "total_pairs": 103527,
+  "train_size": 72789,
+  "val_size": 15412,
+  "test_size": 15326,
+  "intent_counts": {
+    "ios_update_issue": 31658,
+    "battery_power_drain": 10464,
+    "app_crash_performance": 11227,
+    "apple_id_icloud_account": 5435,
+    "audio_sound_speaker": 2343,
+    "screen_display_touch": 5167,
+    "connectivity_wifi_bluetooth": 4184,
+    "hardware_repair_battery_replacement": 1908,
+    "store_billing_subscription": 3211,
+    "photo_storage_backup": 3522,
+    "feedback_complaint_escalation": 4631
+  },
+  "intent_examples": {
+    "ios_update_issue": [
+      {
+        "tweet_id": "2304562",
+        "author_id": "668658",
+        "text": "@668659 @115858 I\ufe0f noticed a lot of \u201cweirdness\u201d with my iPhone7 after the last IOS software upgrade, less battery life, lock-ups, etc.",
+        "clean_text": "I\ufe0f noticed a lot of \u201cweirdness\u201d with my iPhone7 after the last IOS software upgrade, less battery life, lock-ups, etc.",
+        "apple_reply": "We'd be happy to look into this with you! To begin, feel free to DM us what iOS version you're currently on:"
+      },
+      {
+        "tweet_id": "1813742",
+        "author_id": "544883",
+        "text": "@AppleSupport after a week since  installing iOS 11, I lost all photos shots after 2014! I still see them in Moments but mot in Camera Roll!",
+        "clean_text": "after a week since installing iOS 11, I lost all photos shots after 2014! I still see them in Moments but mot in Camera Roll!",
+        "apple_reply": "We\u2019d love to get your photo library working again. Can you start by confirming via DM if you use iCloud Photo Library?"
+      },
+      {
+        "tweet_id": "206656",
+        "author_id": "164946",
+        "text": "@AppleSupport iPhone 7+ iOS 11.0.2 the vehicle is a Ram w/the Uconnect system! thx",
+        "clean_text": "iPhone 7+ iOS 11.0.2 the vehicle is a Ram w/the Uconnect system! thx",
+        "apple_reply": "We'd like to gather some additional info, could you please send us a DM?"
+      },
+      {
+        "tweet_id": "2524567",
+        "author_id": "566528",
+        "text": "Hey @AppleSupport, the new update didn\u2019t fix the \u201cquestion mark instead of an I\u201d problem like you said it would. Help! \u2639\ufe0f",
+        "clean_text": "Hey , the new update didn\u2019t fix the \u201cquestion mark instead of an I\u201d problem like you said it would. Help! \u2639\ufe0f",
+        "apple_reply": "We want to take a closer look at this with you. Meet us in DM and let us know which version of iOS you're using."
+      },
+      {
+        "tweet_id": "1798235",
+        "author_id": "540326",
+        "text": "@115858 if you don\u2019t fix this update disaster, I am switching to Android. And I\u2019ve been a lifelong Mac/Apple user. Shame. I need a good phone https://t.co/FtYuekD4Sw",
+        "clean_text": "if you don\u2019t fix this update disaster, I am switching to Android. And I\u2019ve been a lifelong Mac/Apple user. Shame. I need a good phone",
+        "apple_reply": "We know how important your iPhone is. We'd like to look into what's happening on your iPhone further. DM us which iPhone you have."
+      },
+      {
+        "tweet_id": "387513",
+        "author_id": "207722",
+        "text": "Wish this update wouldn\u2019t have screwed my phone up so much @115858",
+        "clean_text": "Wish this update wouldn\u2019t have screwed my phone up so much",
+        "apple_reply": "You've reached the right place for support. To start, can you tell us more about what's happening with your iPhone?"
+      },
+      {
+        "tweet_id": "903668",
+        "author_id": "334519",
+        "text": "@AppleSupport I have the 7plus and ever since I updated the software it freezes or my apps will get stuck for a few seconds ;(",
+        "clean_text": "I have the 7plus and ever since I updated the software it freezes or my apps will get stuck for a few seconds ;(",
+        "apple_reply": "Have you updated to iOS 11.0.3? Also, which apps are slow to respond? Meet us in DM with the answer."
+      },
+      {
+        "tweet_id": "975779",
+        "author_id": "351406",
+        "text": "Updated my phone and now everything freezes. This sucks @AppleSupport",
+        "clean_text": "Updated my phone and now everything freezes. This sucks",
+        "apple_reply": "We'd be happy to help you out! Send us a DM to get started."
+      },
+      {
+        "tweet_id": "1787883",
+        "author_id": "537076",
+        "text": "Total BS that my iPhone has so many glitches and battery life sucks since the update @AppleSupport",
+        "clean_text": "Total BS that my iPhone has so many glitches and battery life sucks since the update",
+        "apple_reply": "We want to look into this with you. Please send us a DM letting us know which iOS 11 version your iPhone is running to start."
+      },
+      {
+        "tweet_id": "299049",
+        "author_id": "187278",
+        "text": "iOS 11.0.2 is causing lot of issues - Early battery drain, freezing the phone, affected mobile data etc.\nFix ASAP @AppleSupport @115858",
+        "clean_text": "iOS 11.0.2 is causing lot of issues - Early battery drain, freezing the phone, affected mobile data etc. Fix ASAP",
+        "apple_reply": "We can help. Which device are you experiencing this issue with? Are there any steps you've already tried?"
+      },
+      {
+        "tweet_id": "1593339",
+        "author_id": "489696",
+        "text": "Alright alright alright @115858 I just updated to iOS 11 why do I see \u201c?\u201d In place of emojis ?!\u00bf",
+        "clean_text": "Alright alright alright I just updated to iOS 11 why do I see \u201c?\u201d In place of emojis ?!\u00bf",
+        "apple_reply": "We'd like to offer some guidance. Check out these steps for help with what you're seeing:"
+      },
+      {
+        "tweet_id": "596900",
+        "author_id": "261499",
+        "text": "@AppleSupport This bug has been happening to me since the iOS 11 first betas. It\u2019s really annoying, is this ever going to get fixed? https://t.co/ztrk50E0to",
+        "clean_text": "This bug has been happening to me since the iOS 11 first betas. It\u2019s really annoying, is this ever going to get fixed?",
+        "apple_reply": "Thank you for the video, this was very helpful. This doesn't look like expected behavior. We'd like to look into it with you. DM us the exact iOS version you are running."
+      },
+      {
+        "tweet_id": "2217646",
+        "author_id": "647907",
+        "text": "\u00c4r det bara min Iphone som har blivit helt mongo efter iOS 11.0.03? @115858 @AppleSupport",
+        "clean_text": "\u00c4r det bara min Iphone som har blivit helt mongo efter iOS 11.0.03?",
+        "apple_reply": "We offer support via Twitter in English. Contact us for help in your preferred language here:"
+      },
+      {
+        "tweet_id": "62279",
+        "author_id": "130266",
+        "text": "@AppleSupport why isn\u2019t the weather\u2019s widget not working no more? (Even since iOS 11.1) https://t.co/XLQNCFXKDO",
+        "clean_text": "why isn\u2019t the weather\u2019s widget not working no more? (Even since iOS 11.1)",
+        "apple_reply": "We want to look into this with you to be sure it's working as expected. What seems to be happening? Have you restarted?"
+      },
+      {
+        "tweet_id": "1818506",
+        "author_id": "546228",
+        "text": "#IOS11 is seriously doing damage to my 7 plus @AppleSupport. If it\u2019s not my Apps crashing it\u2019s my speaker going out.",
+        "clean_text": "#IOS11 is seriously doing damage to my 7 plus . If it\u2019s not my Apps crashing it\u2019s my speaker going out.",
+        "apple_reply": "Please DM and tell us what version of iOS 11 you see under Settings > General > About > Version. We'll meet you there to help."
+      }
+    ],
+    "battery_power_drain": [
+      {
+        "tweet_id": "2065991",
+        "author_id": "610953",
+        "text": "My iPhone \ud83d\udcf1 6 battery hardly lasts at all since the updates @AppleSupport ? Help? Used to last beyond expectation...",
+        "clean_text": "My iPhone \ud83d\udcf1 6 battery hardly lasts at all since the updates ? Help? Used to last beyond expectation...",
+        "apple_reply": "We'd like to gather some more information for better troubleshooting. Can you DM us the country you are located in?"
+      },
+      {
+        "tweet_id": "2210685",
+        "author_id": "646148",
+        "text": "I just want to see my battery percentage again. Come on @115858 give it back. #ThanksObama #FirstWorldProblems",
+        "clean_text": "I just want to see my battery percentage again. Come on give it back. #ThanksObama #FirstWorldProblems",
+        "apple_reply": "We want to help. Which device is giving you this issue? What iOS version do you have?"
+      },
+      {
+        "tweet_id": "1145192",
+        "author_id": "389531",
+        "text": "HEY @115858 WHY THE FUCK WOULD MY IPHONE 8 I TURN ITSELF OFF IN THE NIGHT WITH A FULL BATTERY",
+        "clean_text": "HEY WHY THE FUCK WOULD MY IPHONE 8 I TURN ITSELF OFF IN THE NIGHT WITH A FULL BATTERY",
+        "apple_reply": "Your iPhone is important to you; we'll do all we can to help. To start, connect with us in DM:"
+      },
+      {
+        "tweet_id": "2484342",
+        "author_id": "709725",
+        "text": "@AppleSupport unimpressed with the latest iOS. Used my phone all of an hour with location services off and it\u2019s used 41% battery. Guess I\u2019m upgrading to android next year",
+        "clean_text": "unimpressed with the latest iOS. Used my phone all of an hour with location services off and it\u2019s used 41% battery. Guess I\u2019m upgrading to android next year",
+        "apple_reply": "We can help with the iPhone battery life. Do you know what version of the iOS is on the device? If not, you can check under Settings > General > About > Version. Let us know and we'll get started."
+      },
+      {
+        "tweet_id": "1641263",
+        "author_id": "501755",
+        "text": "@501756 @AppleSupport @115858 After telling the 'genius' it wouldn't charge he tested &amp; told me it wasn't charging so I could get a replacement for \u00a3329 or a contract 1:(",
+        "clean_text": "After telling the 'genius' it wouldn't charge he tested & told me it wasn't charging so I could get a replacement for \u00a3329 or a contract 1:(",
+        "apple_reply": "Thanks for reaching out. We're here to help. DM us so we can look into this further with you."
+      },
+      {
+        "tweet_id": "1950996",
+        "author_id": "579439",
+        "text": "Ever since iOS 11, my iPad Pro has had this weird after charging boot loop error... And @115858 aren\u2019t willing to anything about it!!!",
+        "clean_text": "Ever since iOS 11, my iPad Pro has had this weird after charging boot loop error... And aren\u2019t willing to anything about it!!!",
+        "apple_reply": "Rest assured, we're committed to helping sort this out. Please DM us, we look forward to continuing where we left off."
+      },
+      {
+        "tweet_id": "2984309",
+        "author_id": "622692",
+        "text": "Ok so @AppleSupport you told me to again update my phone, did that (stupidly) and my battery still won\u2019t last an hour. WAG1?",
+        "clean_text": "Ok so you told me to again update my phone, did that (stupidly) and my battery still won\u2019t last an hour. WAG1?",
+        "apple_reply": "This behavior is certainly unexpected, so we're committed to helping sort it out. First we'd like to share a guide with information about your iPhone's battery and some steps to help optimize performance. Please DM us if you have any questions:"
+      },
+      {
+        "tweet_id": "2592226",
+        "author_id": "734141",
+        "text": "@AppleSupport It's like a bug, locks in 87% and don't have a full load, the lightning bolt icon still charging forever, i don't know what to do.",
+        "clean_text": "It's like a bug, locks in 87% and don't have a full load, the lightning bolt icon still charging forever, i don't know what to do.",
+        "apple_reply": "Thanks for letting us know. Let's investigate further. DM us specifics and we can get started."
+      },
+      {
+        "tweet_id": "2283117",
+        "author_id": "663544",
+        "text": "Literally charged my phone &amp; lost 150% of my charge in a total of 10 mins. What\u2019s wrong with y\u2019all @115858, why do you torture me?",
+        "clean_text": "Literally charged my phone & lost 150% of my charge in a total of 10 mins. What\u2019s wrong with y\u2019all , why do you torture me?",
+        "apple_reply": "That is certainly not the experience we want you to have. Which iPhone model do you own? Also, which iOS version are you currently running on your phone?"
+      },
+      {
+        "tweet_id": "2317250",
+        "author_id": "671849",
+        "text": "@AppleSupport hello Apple! Very happy with my iPhone X. What I really don\u2019t understand is why you didn\u2019t include in the box a fast charger. Very very poor image the slow charger that we use the last X years! Can I change it to a fast one please?",
+        "clean_text": "hello Apple! Very happy with my iPhone X. What I really don\u2019t understand is why you didn\u2019t include in the box a fast charger. Very very poor image the slow charger that we use the last X years! Can I change it to a fast one please?",
+        "apple_reply": "We'd like you to check out the details on our batteries here: The battery is designed to fast charge, even with the 5W adapter, up to 80%."
+      },
+      {
+        "tweet_id": "1450150",
+        "author_id": "456506",
+        "text": "@AppleSupport iOS 11.1 drains my ipad battery.  I went from 100% to 7% in 2 hours while streaming radio.  Has never happened before. FIX!",
+        "clean_text": "iOS 11.1 drains my ipad battery. I went from 100% to 7% in 2 hours while streaming radio. Has never happened before. FIX!",
+        "apple_reply": "Send us a DM. Let us know when exactly you updated and we'll look into it with you."
+      },
+      {
+        "tweet_id": "1353908",
+        "author_id": "435733",
+        "text": "I woke up to a dead phone after it being on the charger all night. I don't want to upgrade to the iPhone 8 yet, damnit @115858",
+        "clean_text": "I woke up to a dead phone after it being on the charger all night. I don't want to upgrade to the iPhone 8 yet, damnit",
+        "apple_reply": "We are here to help. DM us your device details and we can take a look."
+      },
+      {
+        "tweet_id": "2062381",
+        "author_id": "164563",
+        "text": "@115858 @AppleSupport @116333 please do something about ios11\u2019s battery drain issue. both my ipad pro &amp; iphone 7 always need charging! \ud83d\ude22",
+        "clean_text": "please do something about ios11\u2019s battery drain issue. both my ipad pro & iphone 7 always need charging! \ud83d\ude22",
+        "apple_reply": "We'd be happy to look this over with you. Please meet us in DM so we may gather information, and better assist."
+      },
+      {
+        "tweet_id": "262213",
+        "author_id": "178456",
+        "text": "@AppleSupport Yes, at 1st I thought it could be an internal problem w/ my battery. I updated 4 phones at home.  All of them have the same issue w/ 11.0.2",
+        "clean_text": "Yes, at 1st I thought it could be an internal problem w/ my battery. I updated 4 phones at home. All of them have the same issue w/ 11.0.2",
+        "apple_reply": "That's definitely unusual, and we'd like to work with you to investigate. Meet us in DM where we can learn more about this."
+      },
+      {
+        "tweet_id": "1186548",
+        "author_id": "399007",
+        "text": "@AppleSupport Updated to 11.0.3 &amp; battery has gone from 50% to 30% in 5 minutes! Going down quickly. Please help!!",
+        "clean_text": "Updated to 11.0.3 & battery has gone from 50% to 30% in 5 minutes! Going down quickly. Please help!!",
+        "apple_reply": "We've received your DM and look forward to working with you there."
+      }
+    ],
+    "app_crash_performance": [
+      {
+        "tweet_id": "1360095",
+        "author_id": "437092",
+        "text": "@AppleSupport My battery dies just while being in my pocket and my phones been freezing and just shutting out apps while I'm on them",
+        "clean_text": "My battery dies just while being in my pocket and my phones been freezing and just shutting out apps while I'm on them",
+        "apple_reply": "We want to make sure your iPhone works the way you expect it to. Let's get paired up in DM to get started."
+      },
+      {
+        "tweet_id": "1461619",
+        "author_id": "459226",
+        "text": "@AppleSupport can you fix this glitch please!! Can\u2019t type the letter I\ufe0f",
+        "clean_text": "can you fix this glitch please!! Can\u2019t type the letter I\ufe0f",
+        "apple_reply": "We can offer some guidance on this. DM us the device and iOS version and we'll go from there."
+      },
+      {
+        "tweet_id": "1767342",
+        "author_id": "531427",
+        "text": "@AppleSupport hello I\ufe0f did the latest update to fix the bug of the I\ufe0f getting replaced by a question mark but I\u2019m still having problems.",
+        "clean_text": "hello I\ufe0f did the latest update to fix the bug of the I\ufe0f getting replaced by a question mark but I\u2019m still having problems.",
+        "apple_reply": "Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update:"
+      },
+      {
+        "tweet_id": "1519209",
+        "author_id": "472367",
+        "text": "This \u201cI\ufe0f\u201d glitch is so weird. Fix it @115858 !",
+        "clean_text": "This \u201cI\ufe0f\u201d glitch is so weird. Fix it !",
+        "apple_reply": "We're here for you and happy to help. Which device are you using? DM us and let us know."
+      },
+      {
+        "tweet_id": "1074232",
+        "author_id": "373453",
+        "text": "#IOS11.0.3 : Third update and always the same bug with Bluetooth &amp; Wifi. Always automatic activation \ud83d\ude21 @AppleSupport \ud83d\udc4e https://t.co/yIu7FFG64A",
+        "clean_text": "#IOS11.0.3 : Third update and always the same bug with Bluetooth & Wifi. Always automatic activation \ud83d\ude21 \ud83d\udc4e",
+        "apple_reply": "The Bluetooth and Wi-Fi buttons in the Control Center only disconnect. This article will give more details:"
+      },
+      {
+        "tweet_id": "1769291",
+        "author_id": "531940",
+        "text": "Oh and @115858 please fix this I\ufe0f bug it\u2019s driving everyone insane",
+        "clean_text": "Oh and please fix this I\ufe0f bug it\u2019s driving everyone insane",
+        "apple_reply": "Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update:"
+      },
+      {
+        "tweet_id": "639744",
+        "author_id": "271743",
+        "text": "@AppleSupport updated to iOS 11.1.1 and now I have constant problems with my apps freezing/not opening. I have an iPhone 6s",
+        "clean_text": "updated to iOS 11.1.1 and now I have constant problems with my apps freezing/not opening. I have an iPhone 6s",
+        "apple_reply": "We'd recommend first backing up - Then updating to our latest version which is 11.1.2 by going to Settings > General > Software Update. Once you have updated please let us know if the issue persists and we'll go from there."
+      },
+      {
+        "tweet_id": "2241183",
+        "author_id": "274224",
+        "text": "@115948 @AppleSupport @115858 my music has been freezing, shutting down and moving slow. It\u2019s quite annoying when im working out especially.",
+        "clean_text": "my music has been freezing, shutting down and moving slow. It\u2019s quite annoying when im working out especially.",
+        "apple_reply": "That makes it tough to enjoy your workout. Let's work together to get things working as they should. To start, which device are you having this issue on? Also, what's the exact iOS version you have installed? You can check under Settings > General > About."
+      },
+      {
+        "tweet_id": "920494",
+        "author_id": "338496",
+        "text": "The new iPhone update is making my phone freeze. Fix this. @115858",
+        "clean_text": "The new iPhone update is making my phone freeze. Fix this.",
+        "apple_reply": "We'd like to help you with your iPhone. Can you give us more details about what's happening? Is it every app or just a few?"
+      },
+      {
+        "tweet_id": "1392457",
+        "author_id": "514731",
+        "text": "@115858 Fix the battery drain/slow performance on the iPhone 6, no way I buy a new one unless this gets fixed.  V11.0.3",
+        "clean_text": "Fix the battery drain/slow performance on the iPhone 6, no way I buy a new one unless this gets fixed. V11.0.3",
+        "apple_reply": "We'd like to help you. DM us and we can take a closer look there."
+      },
+      {
+        "tweet_id": "1846665",
+        "author_id": "553120",
+        "text": "@AppleSupport why is my brand new iPhone 7 Plus freezing with this new update? Very disappointed in y\u2019all the past few releases. Time4change",
+        "clean_text": "why is my brand new iPhone 7 Plus freezing with this new update? Very disappointed in y\u2019all the past few releases. Time4change",
+        "apple_reply": "We want you to have a better experience with iOS 11. Could you join us in DM and we'll take a look together?"
+      },
+      {
+        "tweet_id": "598100",
+        "author_id": "258352",
+        "text": "Update @AppleSupport sorry is now crashing after 20sec not 10.",
+        "clean_text": "Update sorry is now crashing after 20sec not 10.",
+        "apple_reply": "Thanks for the update. The following article was designed to assist with this issue, please give the steps within it a try, then let us know how it goes."
+      },
+      {
+        "tweet_id": "1643853",
+        "author_id": "502385",
+        "text": "So can yall like fix this glitch with the letter I @AppleSupport",
+        "clean_text": "So can yall like fix this glitch with the letter I",
+        "apple_reply": "Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update:"
+      },
+      {
+        "tweet_id": "2436448",
+        "author_id": "180372",
+        "text": "@AppleSupport just updated to iOS 11 yesterday, and nothing but crashing and horrible battery life.. still feels like it\u2019s in Alfa stages...",
+        "clean_text": "just updated to iOS 11 yesterday, and nothing but crashing and horrible battery life.. still feels like it\u2019s in Alfa stages...",
+        "apple_reply": "Let's take a look. Is your iPhone is showing the message that is identified in this article:"
+      },
+      {
+        "tweet_id": "1586890",
+        "author_id": "488177",
+        "text": "@AppleSupport Freezing up, unable to make calls, speaker phone not working, Siri not working",
+        "clean_text": "Freezing up, unable to make calls, speaker phone not working, Siri not working",
+        "apple_reply": "We'd like some additional details of the issues to assist. Send us a DM using the link below and we'll continue."
+      }
+    ],
+    "apple_id_icloud_account": [
+      {
+        "tweet_id": "1956875",
+        "author_id": "580698",
+        "text": "@AppleSupport ok, I\u2019ve got a forgotten password. Go to use the security questions but says wrong DOB. No online chat to be found, help!",
+        "clean_text": "ok, I\u2019ve got a forgotten password. Go to use the security questions but says wrong DOB. No online chat to be found, help!",
+        "apple_reply": "For support with your Apple ID, reach out to our Account Security support here:"
+      },
+      {
+        "tweet_id": "2910508",
+        "author_id": "200659",
+        "text": "@AppleSupport My notes from the past 3 months just disappeared from iCloud",
+        "clean_text": "My notes from the past 3 months just disappeared from iCloud",
+        "apple_reply": "We're here to help! Send us a DM, and we'll take a closer look into this issue together."
+      },
+      {
+        "tweet_id": "1335182",
+        "author_id": "431460",
+        "text": "@AppleSupport thank you! I was able to login and update it. But is there a way to resend the confirmation email?",
+        "clean_text": "thank you! I was able to login and update it. But is there a way to resend the confirmation email?",
+        "apple_reply": "The email won't be resent, but updates will go to the updated address. The previous link will let you check the status."
+      },
+      {
+        "tweet_id": "2355844",
+        "author_id": "680594",
+        "text": "Trying to download photos from iCloud. Agony. Buying an iPhone is honestly the worst decision I\u2019ve ever made. @115858",
+        "clean_text": "Trying to download photos from iCloud. Agony. Buying an iPhone is honestly the worst decision I\u2019ve ever made.",
+        "apple_reply": "We'd love to help and turn this around for you. Certainly the opposite of what we want you to experience. Please DM us and let us know all about what's going on, including any issues you're seeing, or steps you've tried so far."
+      },
+      {
+        "tweet_id": "542423",
+        "author_id": "245895",
+        "text": "@AppleSupport Hi, my iPhone 7 keeps going to a buffering black screen and then takes me to enter my password again. But it's doing it every 20s! What should I do? Thanks.",
+        "clean_text": "Hi, my iPhone 7 keeps going to a buffering black screen and then takes me to enter my password again. But it's doing it every 20s! What should I do? Thanks.",
+        "apple_reply": "We're glad to hear the update resolved this for you. If you need any assistance in the future, we're here for you."
+      },
+      {
+        "tweet_id": "1763049",
+        "author_id": "530438",
+        "text": "@AppleSupport there must be a better way to use a tvOS app without entering long complex password on remote. @70059",
+        "clean_text": "there must be a better way to use a tvOS app without entering long complex password on remote.",
+        "apple_reply": "We'd like to know more. DM us the details and we'll go from there."
+      },
+      {
+        "tweet_id": "148079",
+        "author_id": "149682",
+        "text": "@AppleSupport I know how to do that, my problem is that my WiFi will turn on by itself and connect to a network that\u2019s locked so I\u2019m always having to turn it back off, it\u2019s just frustrating",
+        "clean_text": "I know how to do that, my problem is that my WiFi will turn on by itself and connect to a network that\u2019s locked so I\u2019m always having to turn it back off, it\u2019s just frustrating",
+        "apple_reply": "Just to be clear, are you turning Wi-Fi off in Settings > Wi-Fi and it's turning back on?"
+      },
+      {
+        "tweet_id": "2780614",
+        "author_id": "754064",
+        "text": "@115858 can you please start making good quality phones \ud83d\ude21, it sucks you know, coz i have lost my data, i lost my job opportunity and still not able to login because the mobile number i have registered i change and can't pass the 2step verification.",
+        "clean_text": "can you please start making good quality phones \ud83d\ude21, it sucks you know, coz i have lost my data, i lost my job opportunity and still not able to login because the mobile number i have registered i change and can't pass the 2step verification.",
+        "apple_reply": "We understand needing access to your account. It's important to always keep your info up-to-date. If you no longer have access to a trusted device or phone number and are using two-factor authentication, you'll want to enter account recovery:"
+      },
+      {
+        "tweet_id": "2642278",
+        "author_id": "144220",
+        "text": "@AppleSupport That's what I thought. I also checked my iTunes account and no purchase showed since June. I'm going to DM a screenshot for you to see that they did a very good job. Thanks for responding so quickly. I really appreciate it.",
+        "clean_text": "That's what I thought. I also checked my iTunes account and no purchase showed since June. I'm going to DM a screenshot for you to see that they did a very good job. Thanks for responding so quickly. I really appreciate it.",
+        "apple_reply": "No problem and just reach out again if you need more help. Have a good one!"
+      },
+      {
+        "tweet_id": "51628",
+        "author_id": "127590",
+        "text": "@AppleSupport hey..um my bookmarks and reading list are all gone and i didn\u2019t connect them to icloud, is there any way to get them back?",
+        "clean_text": "hey..um my bookmarks and reading list are all gone and i didn\u2019t connect them to icloud, is there any way to get them back?",
+        "apple_reply": "We can certainly help look into this with you. DM us & tell us more about how this happened."
+      },
+      {
+        "tweet_id": "1102624",
+        "author_id": "380184",
+        "text": "@AppleSupport Appel Care is apparently the identifier for Uograde program membership and when I log into my account, it seems like Apple Care was deleted",
+        "clean_text": "Appel Care is apparently the identifier for Uograde program membership and when I log into my account, it seems like Apple Care was deleted",
+        "apple_reply": "Can you tell us what country you're currently in? DM us back, we'll continue on from there."
+      },
+      {
+        "tweet_id": "1078278",
+        "author_id": "374369",
+        "text": "@AppleSupport I\u2019ve just got a new iPhone7 and not all of my music is syncing via iTunes. Any ideas? Thanks",
+        "clean_text": "I\u2019ve just got a new iPhone7 and not all of my music is syncing via iTunes. Any ideas? Thanks",
+        "apple_reply": "We'd be happy to help. Here's a link that may be useful:"
+      },
+      {
+        "tweet_id": "633804",
+        "author_id": "270237",
+        "text": "@AppleSupport Hi, trying to fix my iphone 6 stuck on apple logo with ios 11.1.1, i tried to downgrade it to 11.0.3 and when finished it stuck on ''iphone is disabled connect to itunes'' with no carrier logo or battery logo or anything just that, any help please??",
+        "clean_text": "Hi, trying to fix my iphone 6 stuck on apple logo with ios 11.1.1, i tried to downgrade it to 11.0.3 and when finished it stuck on ''iphone is disabled connect to itunes'' with no carrier logo or battery logo or anything just that, any help please??",
+        "apple_reply": "We can help you. Please DM us via the following link and we'll take it from there."
+      },
+      {
+        "tweet_id": "2686677",
+        "author_id": "755513",
+        "text": "@AppleSupport can you guys please fix the issue with iOS 11 and not being able to log into my iCloud it\u2019s a real inconvenience",
+        "clean_text": "can you guys please fix the issue with iOS 11 and not being able to log into my iCloud it\u2019s a real inconvenience",
+        "apple_reply": "We'll be glad to work with you and get this figured out. What happens when you try to sign in? Do you receive an error?"
+      },
+      {
+        "tweet_id": "2071974",
+        "author_id": "612806",
+        "text": "Why any1 buys an iphone is beyond me . Got 1 for my lad and just spent 40 mins trying to set an apple id up with no luck at all . #wasteoftime #shouldofgotasamsung @125607 @AppleSupport",
+        "clean_text": "Why any1 buys an iphone is beyond me . Got 1 for my lad and just spent 40 mins trying to set an apple id up with no luck at all . #wasteoftime #shouldofgotasamsung",
+        "apple_reply": "We'd love to help with this. In DM, please share a few details about the issue you're having when setting up the Apple ID."
+      }
+    ],
+    "audio_sound_speaker": [
+      {
+        "tweet_id": "266452",
+        "author_id": "179478",
+        "text": "@AppleSupport No, don\u2019t have any other. Also when this happen, my headphones won\u2019t allow skipping songs and volume control",
+        "clean_text": "No, don\u2019t have any other. Also when this happen, my headphones won\u2019t allow skipping songs and volume control",
+        "apple_reply": "Shoot us a DM and we'll look into the next best option."
+      },
+      {
+        "tweet_id": "1342787",
+        "author_id": "433172",
+        "text": "Love my new #iphone8, @AppleSupport. I would like to hear the people I speak to, but I might be just picky, right? Any hints?",
+        "clean_text": "Love my new #iphone8, . I would like to hear the people I speak to, but I might be just picky, right? Any hints?",
+        "apple_reply": "We want to look into this with you. Can you tell us more about what's going on via DM?"
+      },
+      {
+        "tweet_id": "844271",
+        "author_id": "320720",
+        "text": "@115858 @AppleSupport There\u2019s an issue where if you\u2019re screen recording and exit the app, the audio does not continue to be heard/is quiet.",
+        "clean_text": "There\u2019s an issue where if you\u2019re screen recording and exit the app, the audio does not continue to be heard/is quiet.",
+        "apple_reply": "We'd be happy to look into this with you. Can you provide us which iOS version is currently installed on your device?"
+      },
+      {
+        "tweet_id": "1908711",
+        "author_id": "568622",
+        "text": "@115858 iOS 11 is dick. So many lock screen bugs and no alarm volume control ?!",
+        "clean_text": "iOS 11 is dick. So many lock screen bugs and no alarm volume control ?!",
+        "apple_reply": "We'd love to help with the trouble that you're having! Send us a DM with which version of iOS 11 you've updated to."
+      },
+      {
+        "tweet_id": "2314100",
+        "author_id": "671030",
+        "text": "@AppleSupport Call goes through but I can\u2019t hear them and they can\u2019t hear me",
+        "clean_text": "Call goes through but I can\u2019t hear them and they can\u2019t hear me",
+        "apple_reply": "Are you able to hear them if you switch the call to speaker or plug in a pair of headphones?"
+      },
+      {
+        "tweet_id": "1247338",
+        "author_id": "412655",
+        "text": "@AppleSupport if you could release iOS 11.1 real soon that would be great. Currently not getting any sound for phone calls.",
+        "clean_text": "if you could release iOS 11.1 real soon that would be great. Currently not getting any sound for phone calls.",
+        "apple_reply": "We're here to help. Please meet us in DM and we'll take a look at that sound issue together."
+      },
+      {
+        "tweet_id": "2703617",
+        "author_id": "759375",
+        "text": "#iPhoneX crackling sound issue on my phone as well. @115858 support made me restore etc. but no good.  https://t.co/1nI8pKxHnJ",
+        "clean_text": "#iPhoneX crackling sound issue on my phone as well. support made me restore etc. but no good.",
+        "apple_reply": "We'd be happy to look into this with you. Let's meet in DM here:"
+      },
+      {
+        "tweet_id": "2834355",
+        "author_id": "744836",
+        "text": "@AppleSupport I don\u2019t know if it\u2019s a known issue but on my iPhone 8 Plus if I turn the media volume all the way down you can still hear the audio faintly through the upper speaker on any app",
+        "clean_text": "I don\u2019t know if it\u2019s a known issue but on my iPhone 8 Plus if I turn the media volume all the way down you can still hear the audio faintly through the upper speaker on any app",
+        "apple_reply": "We'd be happy to look into this with you more in detail. Please reach out to us via DM and we'll get started."
+      },
+      {
+        "tweet_id": "2677927",
+        "author_id": "733517",
+        "text": "My iPhone is 1yr old and it is currently the worst phone I\u2019ve ever had. No one can hear me on the phone &amp; nothing loads. It\u2019s crap. @115858",
+        "clean_text": "My iPhone is 1yr old and it is currently the worst phone I\u2019ve ever had. No one can hear me on the phone & nothing loads. It\u2019s crap.",
+        "apple_reply": "We want to help. Send us a DM letting us know which country you are located in."
+      },
+      {
+        "tweet_id": "1030513",
+        "author_id": "311373",
+        "text": "@AppleSupport \u201cHey Siri\u201d doesn\u2019t work when music/audio is playing",
+        "clean_text": "\u201cHey Siri\u201d doesn\u2019t work when music/audio is playing",
+        "apple_reply": "We'd like to help. DM us what version of iOS you have and we'll look into this further with you there."
+      },
+      {
+        "tweet_id": "2914641",
+        "author_id": "806809",
+        "text": "@AppleSupport this seems to indicate that my 4th Gen AppleTV is playing music from Apple Music but it\u2019s not. Everything else plays sound but Apple Music. https://t.co/rNvZjzQF8V",
+        "clean_text": "this seems to indicate that my 4th Gen AppleTV is playing music from Apple Music but it\u2019s not. Everything else plays sound but Apple Music.",
+        "apple_reply": "For the best help with your Apple TV, please reach out to the experts here:"
+      },
+      {
+        "tweet_id": "300062",
+        "author_id": "187551",
+        "text": "@AppleSupport my mic isnt working with those screenrecord things, how can i fix this?",
+        "clean_text": "my mic isnt working with those screenrecord things, how can i fix this?",
+        "apple_reply": "We'd be happy to help. Which device are you using?"
+      },
+      {
+        "tweet_id": "1900949",
+        "author_id": "566503",
+        "text": "@AppleSupport your new update screwed up SPEAKER \ud83d\udd0a on calls. It never works \ud83d\ude21",
+        "clean_text": "your new update screwed up SPEAKER \ud83d\udd0a on calls. It never works \ud83d\ude21",
+        "apple_reply": "Let's see what we can do about your speaker issue. Send us a DM with your exact iOS version to get started."
+      },
+      {
+        "tweet_id": "2680187",
+        "author_id": "754079",
+        "text": "@AppleSupport nothing doing at all ... just finish updating and suddenly screen has gone !!! even i did not get tym to take my backup!!!! ... and there is no sound!!! and one more problme we are facing which is camera problem!!!!",
+        "clean_text": "nothing doing at all ... just finish updating and suddenly screen has gone !!! even i did not get tym to take my backup!!!! ... and there is no sound!!! and one more problme we are facing which is camera problem!!!!",
+        "apple_reply": "Have you tried to force restart it by holding the volume down and side button? If not, give that a shot. Reply in DM so we can gather some more info."
+      },
+      {
+        "tweet_id": "2057164",
+        "author_id": "171855",
+        "text": "So the new AirPods aren\u2019t working!!! @AppleSupport",
+        "clean_text": "So the new AirPods aren\u2019t working!!!",
+        "apple_reply": "We're sorry to hear this is happening. Meet us in DM and we will gather some details and get you on the path to resolution."
+      }
+    ],
+    "screen_display_touch": [
+      {
+        "tweet_id": "939529",
+        "author_id": "342713",
+        "text": "@AppleSupport Music &amp; pod controls from lock screen got fixed temporarily w/recent update but back to this FYI https://t.co/haQVyYYEQC",
+        "clean_text": "Music & pod controls from lock screen got fixed temporarily w/recent update but back to this FYI",
+        "apple_reply": "We'd be happy to look into this with you. Which iPhone and iOS version are you using?"
+      },
+      {
+        "tweet_id": "1860575",
+        "author_id": "556176",
+        "text": "Dear @AppleSupport you all are really tryna serve me. All I did was update my software &amp; now my MacBook won\u2019t load past the startup screen. #WhatsReallyGood",
+        "clean_text": "Dear you all are really tryna serve me. All I did was update my software & now my MacBook won\u2019t load past the startup screen. #WhatsReallyGood",
+        "apple_reply": "Hey, we'll help you get your Mac back up and running. Send us a DM and we'll work together to get this figured out."
+      },
+      {
+        "tweet_id": "1937841",
+        "author_id": "576449",
+        "text": "@115858 Screen freezes, cant hear calls &amp; no one can hear me, when my alarm goes off it doesnt ring anymore - all started when new update came out.",
+        "clean_text": "Screen freezes, cant hear calls & no one can hear me, when my alarm goes off it doesnt ring anymore - all started when new update came out.",
+        "apple_reply": "This is certainly not expected behavior. Please DM us and we'll be glad to look into this further with you."
+      },
+      {
+        "tweet_id": "1957194",
+        "author_id": "387135",
+        "text": "@AppleSupport  How much would it cost to fix a cracked IPhone 6s screen?",
+        "clean_text": "How much would it cost to fix a cracked IPhone 6s screen?",
+        "apple_reply": "DM us with the country you're located in so that we can get you the information for your area. Use the link below."
+      },
+      {
+        "tweet_id": "846969",
+        "author_id": "321298",
+        "text": "@AppleSupport got double charged for something but when I try to log in to report a problem it just keeps bringing up the login screen",
+        "clean_text": "got double charged for something but when I try to log in to report a problem it just keeps bringing up the login screen",
+        "apple_reply": "Our iTunes Store team is best suited to assist you. You can reach them directly here:"
+      },
+      {
+        "tweet_id": "1598641",
+        "author_id": "490998",
+        "text": "@AppleSupport how do you get the thumbnails to show up when you take a screen shot on the X ?",
+        "clean_text": "how do you get the thumbnails to show up when you take a screen shot on the X ?",
+        "apple_reply": "We're here to help. What iOS version are you currently running? Let us know in DM."
+      },
+      {
+        "tweet_id": "2082336",
+        "author_id": "615833",
+        "text": "@AppleSupport So, give me a tip or trick. The retina screen of my MB Pro 13\" has been replaced, but the replacement is just as bad...",
+        "clean_text": "So, give me a tip or trick. The retina screen of my MB Pro 13\" has been replaced, but the replacement is just as bad...",
+        "apple_reply": "We'd like to help! Send us a DM with the country you are located in along with the located of the replacement to proceed."
+      },
+      {
+        "tweet_id": "2834008",
+        "author_id": "788921",
+        "text": "@AppleSupport My back camera on my IPhone 7 doesn\u2019t work, it just comes up with a black screen but my front camera does work. I\u2019ve reset my phone settings and restarted my phone but it still isn\u2019t working. Do you know what the problem could be please?",
+        "clean_text": "My back camera on my IPhone 7 doesn\u2019t work, it just comes up with a black screen but my front camera does work. I\u2019ve reset my phone settings and restarted my phone but it still isn\u2019t working. Do you know what the problem could be please?",
+        "apple_reply": "We know how essential the camera is to capturing important moments with friends and family. We'll do everything we can to help. Does the rear camera also not work when using other apps such as FaceTime? Can you DM us the exact version of iOS running?"
+      },
+      {
+        "tweet_id": "2856760",
+        "author_id": "794006",
+        "text": "@AppleSupport I don\u2019t use Face ID. It happens about three times a day",
+        "clean_text": "I don\u2019t use Face ID. It happens about three times a day",
+        "apple_reply": "Let's move this to DM where we can delve into this more deeply."
+      },
+      {
+        "tweet_id": "342843",
+        "author_id": "197621",
+        "text": "i NEVER had a problem with my ipad until i updated, its always lagging touch wise when i first use it everyday @AppleSupport",
+        "clean_text": "i NEVER had a problem with my ipad until i updated, its always lagging touch wise when i first use it everyday",
+        "apple_reply": "We'll be glad to assist you. Have you tried these steps?"
+      },
+      {
+        "tweet_id": "2731292",
+        "author_id": "765674",
+        "text": "Hasta cu\u00e1ndo van a arreglar los problemas con el iOS, @115858? De pronto, mi tel\u00e9fono ya no reconoce el \"touch\" y ni puedo hacer nada hasta que re-inicio! Dijeron en la \u00faltima actualizaci\u00f3n que este problema@se iba a solucionar y NADA.",
+        "clean_text": "Hasta cu\u00e1ndo van a arreglar los problemas con el iOS, ? De pronto, mi tel\u00e9fono ya no reconoce el \"touch\" y ni puedo hacer nada hasta que re-inicio! Dijeron en la \u00faltima actualizaci\u00f3n que este problema iba a solucionar y NADA.",
+        "apple_reply": "We offer support via Twitter in English. Get help in Spanish here: or join"
+      },
+      {
+        "tweet_id": "1714621",
+        "author_id": "140216",
+        "text": "@AppleSupport I'd love to show you what is happening.  I expect it is the same with everybody... but would be willing to do a screen share",
+        "clean_text": "I'd love to show you what is happening. I expect it is the same with everybody... but would be willing to do a screen share",
+        "apple_reply": "We are here to help. DM us and we will continue to troubleshoot from there."
+      },
+      {
+        "tweet_id": "2400942",
+        "author_id": "690800",
+        "text": "@AppleSupport Spotify doesn\u2019t show on the lock screen, can\u2019t change volume with vol buttons while locked. And I have an iPhone 7",
+        "clean_text": "Spotify doesn\u2019t show on the lock screen, can\u2019t change volume with vol buttons while locked. And I have an iPhone 7",
+        "apple_reply": "We want to help. Meet us in DM and we'll work towards a solution together."
+      },
+      {
+        "tweet_id": "2345980",
+        "author_id": "345217",
+        "text": "@AppleSupport I have 11. And I know multiple ios 11 users that have it. I have the screen rotation locked and it will do it by itself every now and then so I have to unlock it and rotate it back",
+        "clean_text": "I have 11. And I know multiple ios 11 users that have it. I have the screen rotation locked and it will do it by itself every now and then so I have to unlock it and rotate it back",
+        "apple_reply": "Let's take a look at it together. Please send us a DM so we may better assist you."
+      },
+      {
+        "tweet_id": "2568197",
+        "author_id": "217672",
+        "text": "@AppleSupport my phone randomly senses touch at random spots on the screen (even when it\u2019s completely dry) good thing you don\u2019t care!",
+        "clean_text": "my phone randomly senses touch at random spots on the screen (even when it\u2019s completely dry) good thing you don\u2019t care!",
+        "apple_reply": "That is certainly not the experience we want you to have Which iPhone model do you own?"
+      }
+    ],
+    "connectivity_wifi_bluetooth": [
+      {
+        "tweet_id": "989613",
+        "author_id": "354432",
+        "text": "@115858 tired of my WiFi dropping. There is a serious BUG with the newer iPhones (7 and up) !! My iPhone 6 can\u2019t be near a 7/8 or ill drop!!",
+        "clean_text": "tired of my WiFi dropping. There is a serious BUG with the newer iPhones (7 and up) !! My iPhone 6 can\u2019t be near a 7/8 or ill drop!!",
+        "apple_reply": "How many devices are connecting to your Wi-Fi network at a time? Does this issue happen when only a few iPhones are connected?"
+      },
+      {
+        "tweet_id": "337009",
+        "author_id": "196407",
+        "text": "@196406 @AppleSupport I have the same issue on my new iPhone 8+. WiFi works great for a bit, then just stops. Restarted phone and toggled airplane several times",
+        "clean_text": "I have the same issue on my new iPhone 8+. WiFi works great for a bit, then just stops. Restarted phone and toggled airplane several times",
+        "apple_reply": "We'll help you out! Send us a DM, and we can work with you from there."
+      },
+      {
+        "tweet_id": "1848889",
+        "author_id": "553611",
+        "text": "Dear @115858, if I choose to turn wifi/bluetooth off, it should stay off! iOS11 keeps turning them on when I\u2019ve turned them off.",
+        "clean_text": "Dear , if I choose to turn wifi/bluetooth off, it should stay off! iOS11 keeps turning them on when I\u2019ve turned them off.",
+        "apple_reply": "We can help. To be sure we\u2019re on the same page, tell us where Wi-Fi and Bluetooth are being switched off."
+      },
+      {
+        "tweet_id": "96995",
+        "author_id": "137170",
+        "text": "@115858 @AppleSupport the Bluetooth function on my iPhone is super frustrating! I accidentally pressed forget device and now my iPhone is forgetting my wireless headphone forever! I did all reset but still can\u2019t find my device! so frustrating!",
+        "clean_text": "the Bluetooth function on my iPhone is super frustrating! I accidentally pressed forget device and now my iPhone is forgetting my wireless headphone forever! I did all reset but still can\u2019t find my device! so frustrating!",
+        "apple_reply": "We'd be happy to help you with this. Let us know in DM the iOS version you're using and the type of Bluetooth headphones."
+      },
+      {
+        "tweet_id": "1342805",
+        "author_id": "433176",
+        "text": "@AppleSupport Once my phone is locked the wifi disconnects..im not sure why its doing that. Im only experiencing this with the new ios",
+        "clean_text": "Once my phone is locked the wifi disconnects..im not sure why its doing that. Im only experiencing this with the new ios",
+        "apple_reply": "Are you using the control panel to turn the Wi-Fi on and off, from the lock screen?"
+      },
+      {
+        "tweet_id": "107346",
+        "author_id": "139841",
+        "text": "@AppleSupport umm, why won\u2019t my personal hotspot connect to my laptop? I\u2019ve tried restarting my network settings on my iphone and restarting my laptop but it still doesn\u2019t work. On my laptop, it says \u201cthe connection is limited\u201d",
+        "clean_text": "umm, why won\u2019t my personal hotspot connect to my laptop? I\u2019ve tried restarting my network settings on my iphone and restarting my laptop but it still doesn\u2019t work. On my laptop, it says \u201cthe connection is limited\u201d",
+        "apple_reply": "We are here to help. Let's take a look at this. What is your cell coverage like? What is your current iOS version?"
+      },
+      {
+        "tweet_id": "2587406",
+        "author_id": "250457",
+        "text": "@AppleSupport Since I updated my iPhone 6 to iOS 11, have issues connecting to data. Have to keep turning cellular data on &amp; off to work.",
+        "clean_text": "Since I updated my iPhone 6 to iOS 11, have issues connecting to data. Have to keep turning cellular data on & off to work.",
+        "apple_reply": "We're here to help. Let's take this to DM so we can better assist you."
+      },
+      {
+        "tweet_id": "1911441",
+        "author_id": "569399",
+        "text": "@AppleSupport trying to pair Apple Watch serious 3 to an iPhone 7 keep getting losing signal can\u2019t pair",
+        "clean_text": "trying to pair Apple Watch serious 3 to an iPhone 7 keep getting losing signal can\u2019t pair",
+        "apple_reply": "Thanks for reaching out to us. We are always happy to help. Send us a DM so we can look into this together."
+      },
+      {
+        "tweet_id": "1434285",
+        "author_id": "453011",
+        "text": "any way to downgrade to IOS 10 again?!    my iPhone 7 is hanging , no sound, bluetooth failure, ..\n\nplease help me \n@AppleSupport",
+        "clean_text": "any way to downgrade to IOS 10 again?! my iPhone 7 is hanging , no sound, bluetooth failure, .. please help me",
+        "apple_reply": "Let's take a look at our options to get this resolved. Which version of iOS are you running on your iPhone? Reply in DM."
+      },
+      {
+        "tweet_id": "1021686",
+        "author_id": "361780",
+        "text": "@AppleSupport hi iphone 8 plus leaves screen on even though i lock the phone, why? Also I switch off wifi &amp; bluetooth &amp; it turns itself on \ud83d\ude21",
+        "clean_text": "hi iphone 8 plus leaves screen on even though i lock the phone, why? Also I switch off wifi & bluetooth & it turns itself on \ud83d\ude21",
+        "apple_reply": "Let's look closer. What steps do you take to lock the iPhone? Also, this has Wi-Fi/Bluetooth details:"
+      },
+      {
+        "tweet_id": "1158027",
+        "author_id": "392415",
+        "text": "@AppleSupport Not at all car or not on WiFi or data. Restarted phone. Since yesterday but have had to quite the app when it stalled many x before",
+        "clean_text": "Not at all car or not on WiFi or data. Restarted phone. Since yesterday but have had to quite the app when it stalled many x before",
+        "apple_reply": "Are you experiencing the same behavior when using the Maps app by itself through your iPhone directly?"
+      },
+      {
+        "tweet_id": "522061",
+        "author_id": "159426",
+        "text": "Why won\u2019t my iPhone stay connected to my WiFi? @AppleSupport",
+        "clean_text": "Why won\u2019t my iPhone stay connected to my WiFi?",
+        "apple_reply": "Let's look into what's going on with your Wi-Fi. DM us with which version of iOS are you running in Settings > General > About."
+      },
+      {
+        "tweet_id": "628021",
+        "author_id": "268751",
+        "text": "@AppleSupport, All incoming calls to my iPhone are automatically rejected when connected to my car\u2019s head unit via Bluetooth; Do not disturb while driving are set manually and are not activated. Can you help me figure out what\u2019s wrong and how to fix it. Screenshots below. Thanks. https://t.co/kgwPl5s9JJ",
+        "clean_text": ", All incoming calls to my iPhone are automatically rejected when connected to my car\u2019s head unit via Bluetooth; Do not disturb while driving are set manually and are not activated. Can you help me figure out what\u2019s wrong and how to fix it. Screenshots below. Thanks.",
+        "apple_reply": "We'd like to help. Let's take this to DM and we'll explore ways to provide you assistance."
+      },
+      {
+        "tweet_id": "894871",
+        "author_id": "332476",
+        "text": "@AppleSupport @O2 latest iPhone update is awful, phone constantly crashing, constant loss of sound, weak signal. Please sort out ASAP",
+        "clean_text": "latest iPhone update is awful, phone constantly crashing, constant loss of sound, weak signal. Please sort out ASAP",
+        "apple_reply": "We've got your back! Let's pair up in DM to get a closer look into this with you."
+      },
+      {
+        "tweet_id": "849978",
+        "author_id": "217828",
+        "text": "@AppleSupport It\u2019s working now, but I have to restart my phone every time it does it and then it happens again. And yes, it happens on WiFi and data",
+        "clean_text": "It\u2019s working now, but I have to restart my phone every time it does it and then it happens again. And yes, it happens on WiFi and data",
+        "apple_reply": "You shouldn't have to restart your iPhone each time. Let's meet in DM and we'll take a closer look."
+      }
+    ],
+    "hardware_repair_battery_replacement": [
+      {
+        "tweet_id": "2332004",
+        "author_id": "675027",
+        "text": "@115858 had the worst experience at GrandCentral genius bar, NYC. the problem wasn't resolved! plus a new one was created! #veryfrustrated",
+        "clean_text": "had the worst experience at GrandCentral genius bar, NYC. the problem wasn't resolved! plus a new one was created! #veryfrustrated",
+        "apple_reply": "We'd like to hear about your store experience. Send us a DM with the details, please."
+      },
+      {
+        "tweet_id": "260433",
+        "author_id": "177971",
+        "text": "@AppleSupport Fugget about it. About to switch to Galaxy. Non oem screen \u2018cause next apple store is 600 miles away. #ios11 0.1 AND 0.1 bricked ip7. Thx",
+        "clean_text": "Fugget about it. About to switch to Galaxy. Non oem screen \u2018cause next apple store is 600 miles away. #ios11 0.1 AND 0.1 bricked ip7. Thx",
+        "apple_reply": "We've received your DM and you can expect a response there shortly."
+      },
+      {
+        "tweet_id": "2889425",
+        "author_id": "801115",
+        "text": "Went to the Apple repair center at Festival Mall to inquire about battery replacement for my iPod Touch. I was told it CANNOT be replaced &amp; I need to pay them Php10,000 for a new one. So Apple is lying about this? https://t.co/91E4NwwAGn @AppleSupport I don\u2019t think so",
+        "clean_text": "Went to the Apple repair center at Festival Mall to inquire about battery replacement for my iPod Touch. I was told it CANNOT be replaced & I need to pay them Php10,000 for a new one. So Apple is lying about this? I don\u2019t think so",
+        "apple_reply": "We'd love to look into this with you. Please click here to connect with us in DM. We'll pick up there:"
+      },
+      {
+        "tweet_id": "1821753",
+        "author_id": "546895",
+        "text": "Took it in for repair on friday and said theyd call me next day and didnt give me my laptop back (::: @115858",
+        "clean_text": "Took it in for repair on friday and said theyd call me next day and didnt give me my laptop back (:::",
+        "apple_reply": "We'd like to learn more about your repair. Could you join us in Direct Message? We can help look into this."
+      },
+      {
+        "tweet_id": "825664",
+        "author_id": "316650",
+        "text": "@AppleSupport I requested for a repair and I was told I would get an email about my box but heard nothing? Will it still be coming?",
+        "clean_text": "I requested for a repair and I was told I would get an email about my box but heard nothing? Will it still be coming?",
+        "apple_reply": "Hi there. We'd be happy to check on this for you. Please send us a DM, we'll meet you there."
+      },
+      {
+        "tweet_id": "2812578",
+        "author_id": "784251",
+        "text": "@AppleSupport Yes but no luck -- I'm just going to bring this to an Apple store in the morning, thanks.",
+        "clean_text": "Yes but no luck -- I'm just going to bring this to an Apple store in the morning, thanks.",
+        "apple_reply": "We can certainly help out here over Twitter. If you'd prefer to visit an Apple Retail Store, we can help with scheduling an appointment as well. Let us know the country in which you're located in a DM and we'll continue there."
+      },
+      {
+        "tweet_id": "152936",
+        "author_id": "150985",
+        "text": "@AppleSupport my battery has drained down to 43% percent in less than 20 minutes. New normal? I have been told by your Genius Bar that other companies make devices. Should I end my loyalty with Apple?",
+        "clean_text": "my battery has drained down to 43% percent in less than 20 minutes. New normal? I have been told by your Genius Bar that other companies make devices. Should I end my loyalty with Apple?",
+        "apple_reply": "We'd like to look into this with you. DM us and we'll get started there."
+      },
+      {
+        "tweet_id": "1082993",
+        "author_id": "375458",
+        "text": "@AppleSupport my iPhone 6s has turned into an expensive paperweight, and the Genius Bar today couldn't help me. Surely this can be resolved?",
+        "clean_text": "my iPhone 6s has turned into an expensive paperweight, and the Genius Bar today couldn't help me. Surely this can be resolved?",
+        "apple_reply": "We'll do all we can to assist you. Please DM us more about what's happening with your iPhone."
+      },
+      {
+        "tweet_id": "1286454",
+        "author_id": "420890",
+        "text": "@AppleSupport Hello. When will you have iPhone X models on display at the Apple store?",
+        "clean_text": "Hello. When will you have iPhone X models on display at the Apple store?",
+        "apple_reply": "Hi there. We recommend reaching out to your local Apple Retail store for more info about availability on displays."
+      },
+      {
+        "tweet_id": "1892202",
+        "author_id": "115845",
+        "text": "Can/do @AppleSupport replace a defective battery same day, in the UK, out of warranty, if I visit the Genius Bar?",
+        "clean_text": "Can/do replace a defective battery same day, in the UK, out of warranty, if I visit the Genius Bar?",
+        "apple_reply": "That's a great question. So we can provide the best support, select the following link to join us in a DM."
+      },
+      {
+        "tweet_id": "2304887",
+        "author_id": "202909",
+        "text": "@115858 I have a few questions about product warranty.",
+        "clean_text": "I have a few questions about product warranty.",
+        "apple_reply": "We'd like to help! Which device are you using?"
+      },
+      {
+        "tweet_id": "1802255",
+        "author_id": "541529",
+        "text": "@AppleSupport need to make an appointment to fix my phone that wont turn on yet your genius bar reservation requires a code sent to my phone",
+        "clean_text": "need to make an appointment to fix my phone that wont turn on yet your genius bar reservation requires a code sent to my phone",
+        "apple_reply": "Sounds like two factor authentication is turned on. We got your back. Please DM us and we can work on setting up a reservation."
+      },
+      {
+        "tweet_id": "1947985",
+        "author_id": "578801",
+        "text": "@AppleSupport how do I set up a genius bar appt these days (old url doesn't work) thanks,",
+        "clean_text": "how do I set up a genius bar appt these days (old url doesn't work) thanks,",
+        "apple_reply": "We'd be more than happy to help you get an appointment set. Please meet us in DM, and let us know your country, so we can assist."
+      },
+      {
+        "tweet_id": "307220",
+        "author_id": "189367",
+        "text": "@AppleSupport in 140 chars, gimme the reqs to make me eligible for AppleCare since my wife was told we weren\u2019t eligible",
+        "clean_text": "in 140 chars, gimme the reqs to make me eligible for AppleCare since my wife was told we weren\u2019t eligible",
+        "apple_reply": "We'd love to provide insight. Can you tell us which device you're looking to find out more about AppleCare eligibility with?"
+      },
+      {
+        "tweet_id": "701599",
+        "author_id": "287488",
+        "text": "Stuck in @115858 purgatory. Hope they can fix my iPhone that is stuck in an update/restore endless loop. #applecare #evengeeksneedhelp",
+        "clean_text": "Stuck in purgatory. Hope they can fix my iPhone that is stuck in an update/restore endless loop. #applecare #evengeeksneedhelp",
+        "apple_reply": "We'd be happy to look into this with you more in detail. Please reach out to us via DM and we'll get started."
+      }
+    ],
+    "store_billing_subscription": [
+      {
+        "tweet_id": "817037",
+        "author_id": "314589",
+        "text": "@115858 your new update sucks! Literally #sucks the life out of my battery\u2620\ufe0f No, I don\u2019t want to purchase another new #iPhone fix the issue!",
+        "clean_text": "your new update sucks! Literally #sucks the life out of my battery\u2620\ufe0f No, I don\u2019t want to purchase another new #iPhone fix the issue!",
+        "apple_reply": "We know you rely on your battery and want to help. DM us a bit more information about what's happening."
+      },
+      {
+        "tweet_id": "2282231",
+        "author_id": "394318",
+        "text": "@115858 how much money do you charge to update my phone and apps???",
+        "clean_text": "how much money do you charge to update my phone and apps???",
+        "apple_reply": "That\u2019s a great question. The iOS update is free. Here\u2019s a link that will show you how to complete that: For the apps, the charge will depend on the app developer. If there is a charge, you will be prompted to approve the charge."
+      },
+      {
+        "tweet_id": "2890774",
+        "author_id": "801422",
+        "text": "@AppleSupport hi, please advise why the battery on my iPhone 6s is draining really quickly just lately?! It\u2019s really annoying having to charge after 40 minutes use on the train. It\u2019s going from 90% to 7% in that time",
+        "clean_text": "hi, please advise why the battery on my iPhone 6s is draining really quickly just lately?! It\u2019s really annoying having to charge after 40 minutes use on the train. It\u2019s going from 90% to 7% in that time",
+        "apple_reply": "Great battery life from your iPhone is important, and we want to get to the bottom of what's happening here. \u2022 How often do you fully charge your device? \u2022 Which iOS version is listed in Settings > General > About > Version"
+      },
+      {
+        "tweet_id": "2450168",
+        "author_id": "702218",
+        "text": "@AppleSupport late 2015 MacBook Pro retina purchased in 2016- stains on reflective screen which is internal : need refund or repair FOC",
+        "clean_text": "late 2015 MacBook Pro retina purchased in 2016- stains on reflective screen which is internal : need refund or repair FOC",
+        "apple_reply": "Please send us a DM with some images of what you're seeing and we'd be happy to look into this with you."
+      },
+      {
+        "tweet_id": "1752075",
+        "author_id": "527851",
+        "text": "@AppleSupport Yes I did - I\u2019ve just updated my payment information on my iPhone just to be safe",
+        "clean_text": "Yes I did - I\u2019ve just updated my payment information on my iPhone just to be safe",
+        "apple_reply": "Great, after updating your payment information, are you having issue with the App?"
+      },
+      {
+        "tweet_id": "2003251",
+        "author_id": "592364",
+        "text": "@115858 @AppleSupport purchased my 5SE in March and already having issues with the new updates! #refund #buyback #freeupgrade #notcoolapple",
+        "clean_text": "purchased my 5SE in March and already having issues with the new updates! #refund #buyback #freeupgrade #notcoolapple",
+        "apple_reply": "We want to help. Reach out to us via DM and let us know in detail what is occurring, then we can work together on this."
+      },
+      {
+        "tweet_id": "915801",
+        "author_id": "188465",
+        "text": "@AppleSupport Yes same ID. It\u2019s an In App purchase, upgraded to pro version. Plus I lost all my game progress \ud83d\ude13",
+        "clean_text": "Yes same ID. It\u2019s an In App purchase, upgraded to pro version. Plus I lost all my game progress \ud83d\ude13",
+        "apple_reply": "Got it. Let's get you in contact with our iTunes Store support team for further help:"
+      },
+      {
+        "tweet_id": "2422493",
+        "author_id": "695777",
+        "text": "@AppleSupport YOU CHARGE A SMALL FORTUNE FOR A FUCKING PHONE THE LEAST YOU CAN DO IS FIX THIS FUCKING SQUARE A SHIT! i https://t.co/8NUsQoWyVl",
+        "clean_text": "YOU CHARGE A SMALL FORTUNE FOR A FUCKING PHONE THE LEAST YOU CAN DO IS FIX THIS FUCKING SQUARE A SHIT! i",
+        "apple_reply": "We just released an update, iOS 11.1.1, to address this. Have you had a chance as of yet to update to 11.1.1? If not, backup your device, then give that update a go and let us know if you see a change afterwards."
+      },
+      {
+        "tweet_id": "811638",
+        "author_id": "313383",
+        "text": "@AppleSupport Hi trying to download a game on to my phone but keeps telling payment failed, can't sign in to itunes too",
+        "clean_text": "Hi trying to download a game on to my phone but keeps telling payment failed, can't sign in to itunes too",
+        "apple_reply": "Hi. We're happy to help with this. Let's take a look at this article: Let us know if this helps."
+      },
+      {
+        "tweet_id": "1856891",
+        "author_id": "555345",
+        "text": "hey @AppleSupport whats the deal w/battery life w/ ios11 I\u2019m having to charge my phone and iPad multiple times a day w/out much use!",
+        "clean_text": "hey whats the deal w/battery life w/ ios11 I\u2019m having to charge my phone and iPad multiple times a day w/out much use!",
+        "apple_reply": "That's not what we like to hear! Let's chat over in Direct Message and we'll look into those batteries with you."
+      },
+      {
+        "tweet_id": "302939",
+        "author_id": "188297",
+        "text": "@AppleSupport when I try to download something I was brought to the payment page, and when I put my card info in it said that it was declined. I don\u2019t know why tho please help",
+        "clean_text": "when I try to download something I was brought to the payment page, and when I put my card info in it said that it was declined. I don\u2019t know why tho please help",
+        "apple_reply": "We're here to help. This page may able to provide some guidance: DM us if you are still having issues."
+      },
+      {
+        "tweet_id": "1212807",
+        "author_id": "404652",
+        "text": "@AppleSupport I'm from indonesia. I have a problem when I make a purchase in the app using my itunes balance. Please help me https://t.co/9CwIlEiTv8",
+        "clean_text": "I'm from indonesia. I have a problem when I make a purchase in the app using my itunes balance. Please help me",
+        "apple_reply": "We want to help. What happens when you try to make an in-app purchase?"
+      },
+      {
+        "tweet_id": "2922669",
+        "author_id": "322230",
+        "text": "@AppleSupport the battery with iOS 11 FUCKING SUCKS. I shouldn\u2019t have to charge 3 times a day. I have a brand new phone",
+        "clean_text": "the battery with iOS 11 FUCKING SUCKS. I shouldn\u2019t have to charge 3 times a day. I have a brand new phone",
+        "apple_reply": "We want to help. Join us in DM."
+      },
+      {
+        "tweet_id": "2549104",
+        "author_id": "679986",
+        "text": "@AppleSupport It\u2019s only showing verified purchases from the App Store, before I had my Apple Music subscription. \ud83d\ude13",
+        "clean_text": "It\u2019s only showing verified purchases from the App Store, before I had my Apple Music subscription. \ud83d\ude13",
+        "apple_reply": "Which iOS 11 version are you using? The latest is 11.0.3. Also, were these songs downloaded for offline listening?"
+      },
+      {
+        "tweet_id": "1335198",
+        "author_id": "431465",
+        "text": "@AppleSupport I am expecting more. I think we all deserve more efficiency with your products and get our money's worth.",
+        "clean_text": "I am expecting more. I think we all deserve more efficiency with your products and get our money's worth.",
+        "apple_reply": "Hey, we want to help you get all this sorted. Please send us a DM and we'll work together from there."
+      }
+    ],
+    "photo_storage_backup": [
+      {
+        "tweet_id": "2728136",
+        "author_id": "764969",
+        "text": "@AppleSupport hello, so my iPhone 6s is playing up. My storage is just about full so my phone is being really really slow. So a few days ago i deleted a few apps and I put all my photos on my laptop so I could start deleting them, now this is happening. Help? https://t.co/eVIuHtUUjQ",
+        "clean_text": "hello, so my iPhone 6s is playing up. My storage is just about full so my phone is being really really slow. So a few days ago i deleted a few apps and I put all my photos on my laptop so I could start deleting them, now this is happening. Help?",
+        "apple_reply": "That\u2019s not what we\u2019d like to hear. We know how important getting these issues resolved is. Send us a DM so we can go over them with you."
+      },
+      {
+        "tweet_id": "1834095",
+        "author_id": "550153",
+        "text": "@AppleSupport how do I use my iCloud that I pay for on my iphone6? No space on phone but lots of iCloud doing nothing? Help please?",
+        "clean_text": "how do I use my iCloud that I pay for on my iphone6? No space on phone but lots of iCloud doing nothing? Help please?",
+        "apple_reply": "Great question! We'll be happy to provide some clarity on how iCloud works for your device. Send us a DM to continue."
+      },
+      {
+        "tweet_id": "2572649",
+        "author_id": "729624",
+        "text": "Not enough space to update apps/system update. \n&gt; TF is \u201cOther\u201d?\n&gt; System = 8.5 GB of 16 GB iPad\n@115858 @AppleSupport tf is this crap? https://t.co/LluTwDzrbV",
+        "clean_text": "Not enough space to update apps/system update. > TF is \u201cOther\u201d? > System = 8.5 GB of 16 GB iPad tf is this crap?",
+        "apple_reply": "Thanks for reaching out. DM us which iPad and specific iOS version you are using to get started."
+      },
+      {
+        "tweet_id": "2917310",
+        "author_id": "807477",
+        "text": "@AppleSupport Hi I can\u2019t access any of my photos cause iCloud isn\u2019t working?",
+        "clean_text": "Hi I can\u2019t access any of my photos cause iCloud isn\u2019t working?",
+        "apple_reply": "We'd love to help! What happens when you try? Are you able to see the photo thumbnails in your camera roll?"
+      },
+      {
+        "tweet_id": "146589",
+        "author_id": "149271",
+        "text": "My phone deleted a lot of good photos from a time ago. @AppleSupport @115858 what\u2019s good?! https://t.co/rQNXE6M19Z",
+        "clean_text": "My phone deleted a lot of good photos from a time ago. what\u2019s good?!",
+        "apple_reply": "We understand the importance in wanting to cherish memories and look back on them, so let's check this out together. To get started, which iPhone & iOS version are you using? Also, was an album removed or just random photos?"
+      },
+      {
+        "tweet_id": "2734373",
+        "author_id": "580218",
+        "text": "Storage issue again deleting pics songs and getting no free space back @AppleSupport getting fed up of a fone that I can't use fully",
+        "clean_text": "Storage issue again deleting pics songs and getting no free space back getting fed up of a fone that I can't use fully",
+        "apple_reply": "Send us a DM and we'll continue working on this with you."
+      },
+      {
+        "tweet_id": "2360365",
+        "author_id": "681644",
+        "text": "@115858 @AppleSupport does it make since to do two time restore in the last 3 days and no proper support from your team !!! Really disappointed.",
+        "clean_text": "does it make since to do two time restore in the last 3 days and no proper support from your team !!! Really disappointed.",
+        "apple_reply": "Thanks for reaching out to us. We're here for you. We'd like to begin by finding out what's happening with your device and also which device we're working with. Please DM us that information and we'll take it from there."
+      },
+      {
+        "tweet_id": "396093",
+        "author_id": "209782",
+        "text": "@AppleSupport Camera opens slowly, screen rotation gets stuck, notifications don't get cleared from home screen, black screen when opening safari",
+        "clean_text": "Camera opens slowly, screen rotation gets stuck, notifications don't get cleared from home screen, black screen when opening safari",
+        "apple_reply": "Do you recall doing anything on your iPhone right before this started? Have you tried any steps and if yes, which ones?"
+      },
+      {
+        "tweet_id": "2079357",
+        "author_id": "614971",
+        "text": "@AppleSupport my clock and notifications are no longer showing on my lock screen, and older videos are showing in my recent camera roll?",
+        "clean_text": "my clock and notifications are no longer showing on my lock screen, and older videos are showing in my recent camera roll?",
+        "apple_reply": "We appreciate you reaching out to us. What country are you contacting us from? Let's meet up in DM to continue:"
+      },
+      {
+        "tweet_id": "2729139",
+        "author_id": "765189",
+        "text": "@AppleSupport I have googled how to restore books on ibooks but it didnt help much, i feel devastated, because i kept some highlights and notes in it.",
+        "clean_text": "I have googled how to restore books on ibooks but it didnt help much, i feel devastated, because i kept some highlights and notes in it.",
+        "apple_reply": "We understand how important it can be to be able to access and view your content in iBooks, and we'd love to help. Please send us a DM when you have a moment, and we'll continue there."
+      },
+      {
+        "tweet_id": "848069",
+        "author_id": "286680",
+        "text": "@AppleSupport\nCan I not upgrade frm 10.3.3 to 11.0.3 without taking backup manually on to PC? As always yur softwr did it ( I use iPhone 7).",
+        "clean_text": "Can I not upgrade frm 10.3.3 to 11.0.3 without taking backup manually on to PC? As always yur softwr did it ( I use iPhone 7).",
+        "apple_reply": "We are here to help. DM us the details of your issue and we can take a look at this."
+      },
+      {
+        "tweet_id": "1249048",
+        "author_id": "413053",
+        "text": "@AppleSupport Ever since the update before this newest one, I haven't been able to figure out how to transfer my photos from phone to PC.",
+        "clean_text": "Ever since the update before this newest one, I haven't been able to figure out how to transfer my photos from phone to PC.",
+        "apple_reply": "We'll be happy to look into this with you. DM us and we'll get started."
+      },
+      {
+        "tweet_id": "178650",
+        "author_id": "158109",
+        "text": "@AppleSupport Whenever I\u2019m videocalling on FaceTime, it shows a black screen, but when I use other camera apps it works perfectly. And this is after iOS11",
+        "clean_text": "Whenever I\u2019m videocalling on FaceTime, it shows a black screen, but when I use other camera apps it works perfectly. And this is after iOS11",
+        "apple_reply": "Let's work on it together. Which version of iOS 11 do you have at this time? What troubleshooting have you tried so far?"
+      },
+      {
+        "tweet_id": "523830",
+        "author_id": "241076",
+        "text": "@AppleSupport The Photos app on my MacBook Pro keeps shutting down immediately after opening it. Whats going on??? I need to edit my pictures. This has been happening all week with no solution after sending the report to Apple. I am running the latest software. Thanks",
+        "clean_text": "The Photos app on my MacBook Pro keeps shutting down immediately after opening it. Whats going on??? I need to edit my pictures. This has been happening all week with no solution after sending the report to Apple. I am running the latest software. Thanks",
+        "apple_reply": "We're here for you! Is this happening with any other apps? What's the exact macOS version you're using? Tell us in DM:"
+      },
+      {
+        "tweet_id": "1282425",
+        "author_id": "420017",
+        "text": "@AppleSupport so why my camera shaking ?? https://t.co/sTfCgLRy0b",
+        "clean_text": "so why my camera shaking ??",
+        "apple_reply": "We want to help with your camera. Is this happening on both front and rear cameras?"
+      }
+    ],
+    "feedback_complaint_escalation": [
+      {
+        "tweet_id": "712951",
+        "author_id": "290510",
+        "text": "@115858 IOS11 sucks and makes my iPhone 7 freeze 10x per day. When is there going to be an update",
+        "clean_text": "IOS11 sucks and makes my iPhone 7 freeze 10x per day. When is there going to be an update",
+        "apple_reply": "We'd like to help. Let's chat in DM."
+      },
+      {
+        "tweet_id": "1542007",
+        "author_id": "477779",
+        "text": "New update has been turning my I\ufe0f\u2019s into question marks for 3 days.... get it together @115858 I\ufe0f hate this",
+        "clean_text": "New update has been turning my I\ufe0f\u2019s into question marks for 3 days.... get it together I\ufe0f hate this",
+        "apple_reply": "We want to look into this with you. DM us which model iPhone you have and iOS version to get started."
+      },
+      {
+        "tweet_id": "1862051",
+        "author_id": "556498",
+        "text": "@115858 the new IOS sucks. Its so glitchy and I have a grand new iPhone 8",
+        "clean_text": "the new IOS sucks. Its so glitchy and I have a grand new iPhone 8",
+        "apple_reply": "That's not the experience we want you to have. Please meet us in DM with as much detail as possible about your issue."
+      },
+      {
+        "tweet_id": "1915266",
+        "author_id": "570484",
+        "text": "@AppleSupport why after 11.0.3 update imassage no longer syncs? Please dig up #SteveJobs you guys are horrible without him #dontupgrade",
+        "clean_text": "why after 11.0.3 update imassage no longer syncs? Please dig up #SteveJobs you guys are horrible without him #dontupgrade",
+        "apple_reply": "Hi there. We'd like to look into this with you and get your Messages flowing through again. Please shoot us a DM to get started:"
+      },
+      {
+        "tweet_id": "55971",
+        "author_id": "128698",
+        "text": "This fucking update is the worst! Why can\u2019t we type \u201ci\u201d without funky shit popping up? @115858 #iphone",
+        "clean_text": "This fucking update is the worst! Why can\u2019t we type \u201ci\u201d without funky shit popping up? #iphone",
+        "apple_reply": "We want to help. Which version of iOS do you have installed on your iPhone? You'd see this in Settings > General > About."
+      },
+      {
+        "tweet_id": "2068614",
+        "author_id": "611743",
+        "text": "@AppleSupport I'm very disappointed how my wife was treated by someone in your #Apple store in #Cardiff. Couldn't bother to help my wife.",
+        "clean_text": "I'm very disappointed how my wife was treated by someone in your #Apple store in #Cardiff. Couldn't bother to help my wife.",
+        "apple_reply": "That's not the experience we want you to have when visiting an Apple Store. DM us with details, and we'll see how we can help."
+      },
+      {
+        "tweet_id": "1831580",
+        "author_id": "549560",
+        "text": "@116333  SATECHI BLUETOOTH RECHARGEABLE WIRELESS POINTER rendered useless by iOS11. PLEASE FIX IT!!!!!!!!!!!!!!!",
+        "clean_text": "SATECHI BLUETOOTH RECHARGEABLE WIRELESS POINTER rendered useless by iOS11. PLEASE FIX IT!!!!!!!!!!!!!!!",
+        "apple_reply": "We'd like to look into this with you. DM some additional details, including which devices you're using with Bluetooth."
+      },
+      {
+        "tweet_id": "2022059",
+        "author_id": "598027",
+        "text": "@AppleSupport IOS 11.1 on iPhone 7 plus: worst battery life I\u2019ve ever experienced on an iPhone.",
+        "clean_text": "IOS 11.1 on iPhone 7 plus: worst battery life I\u2019ve ever experienced on an iPhone.",
+        "apple_reply": "We know power plays an important roll in our devices. Send us a DM, and let us know what's going on with your battery."
+      },
+      {
+        "tweet_id": "1867360",
+        "author_id": "557837",
+        "text": "@AppleSupport The worst thing I made was download the lastest version of software.",
+        "clean_text": "The worst thing I made was download the lastest version of software.",
+        "apple_reply": "Hey, are you experiencing a particular issue? If so, let us know and we'll help you. We want you to enjoy the update."
+      },
+      {
+        "tweet_id": "211242",
+        "author_id": "166039",
+        "text": "@AppleSupport M using iOS 11.0.1 ( 15A403) on my iPhone 5S and iPhone 8. On 5S performance is worst. On 8 lot of issues of slow ness",
+        "clean_text": "M using iOS 11.0.1 ( 15A403) on my iPhone 5S and iPhone 8. On 5S performance is worst. On 8 lot of issues of slow ness",
+        "apple_reply": "Thank you for that information. Please go ahead and update to our latest iOS 11.0.2, and let us know if the issue persists."
+      },
+      {
+        "tweet_id": "2320420",
+        "author_id": "227781",
+        "text": "This sucks I hate that my photos have a circle with an exclamation mark @AppleSupport",
+        "clean_text": "This sucks I hate that my photos have a circle with an exclamation mark",
+        "apple_reply": "Let's get you in touch with our Photos Advisors for further assistance at:"
+      },
+      {
+        "tweet_id": "427395",
+        "author_id": "216650",
+        "text": "@AppleSupport please fix the bugs in the new iOS. I\u2019m on 11.0.2 and it\u2019s terrible. I lose sound, apps freeze and I\u2019ve restarted it 3x today.",
+        "clean_text": "please fix the bugs in the new iOS. I\u2019m on 11.0.2 and it\u2019s terrible. I lose sound, apps freeze and I\u2019ve restarted it 3x today.",
+        "apple_reply": "We're here for you. Does the performance issue seem to happen during the use of any app or one specifically? Any app updates?"
+      },
+      {
+        "tweet_id": "1934160",
+        "author_id": "575520",
+        "text": "Disappointed with @AppleSupport in Argentina \ud83d\ude1e",
+        "clean_text": "Disappointed with in Argentina \ud83d\ude1e",
+        "apple_reply": "Thanks for reaching out. Was this a recent visit to an Apple Store? Send us a DM; we'd like to know more to assist."
+      },
+      {
+        "tweet_id": "2066115",
+        "author_id": "610991",
+        "text": "@AppleSupport I pay like $80 a month for this stupid phone that has been rendered useless by your stupid fucking update",
+        "clean_text": "I pay like $80 a month for this stupid phone that has been rendered useless by your stupid fucking update",
+        "apple_reply": "We're here to help you enjoy your device. Here is a helpful link. DM us with any questions."
+      },
+      {
+        "tweet_id": "2555361",
+        "author_id": "725629",
+        "text": "What is thisssss @115858 @AppleSupport ? Worst update ever https://t.co/Qt2KWH5IEC",
+        "clean_text": "What is thisssss ? Worst update ever",
+        "apple_reply": "We'd be happy to take a look at what happened with your Dock on your iPad. Is this still happening? Does a restart of the iPad fix it?"
+      }
+    ]
+  }
+}

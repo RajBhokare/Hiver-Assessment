@@ -1,0 +1,37 @@
+# Project Central Configuration
+project:
+  name: "hiver-assessment"
+  seed: 42
+  version: "0.1.0"
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  splits_dir: "data/splits"
+  models_dir: "artifacts/models"
+  metrics_dir: "artifacts/metrics"
+  logs_dir: "artifacts/logs"
+
+data:
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+  stratify: true
+  text_column: "text"
+  label_column: "label"
+
+model:
+  baseline:
+    name: "heuristic_tfidf_baseline"
+    max_features: 5000
+    ngram_range: [1, 2]
+
+evaluation:
+  metrics:
+    - "accuracy"
+    - "precision_macro"
+    - "recall_macro"
+    - "f1_macro"
+    - "f1_weighted"
+  confusion_matrix: true
+  per_class_report: true

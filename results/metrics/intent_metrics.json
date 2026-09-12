@@ -1,0 +1,704 @@
+{
+  "majority_baseline": {
+    "sample_count": 200,
+    "classes": [
+      "app_performance_crash",
+      "apple_id_account_security",
+      "audio_call_accessory",
+      "battery_power_charging",
+      "general_complaint_feedback",
+      "hardware_repair_store_service",
+      "icloud_storage_backup",
+      "ios_update_issue",
+      "network_connectivity",
+      "screen_display_touch",
+      "store_billing_subscription"
+    ],
+    "accuracy": 0.635,
+    "macro_precision": 0.0577,
+    "macro_recall": 0.0909,
+    "macro_f1": 0.0706,
+    "weighted_f1": 0.4932,
+    "per_intent": {
+      "app_performance_crash": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 7
+      },
+      "apple_id_account_security": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 4
+      },
+      "audio_call_accessory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      "battery_power_charging": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 16
+      },
+      "general_complaint_feedback": {
+        "precision": 0.635,
+        "recall": 1.0,
+        "f1_score": 0.7768,
+        "support": 127
+      },
+      "hardware_repair_store_service": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      "icloud_storage_backup": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 3
+      },
+      "ios_update_issue": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 33
+      },
+      "network_connectivity": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 4
+      },
+      "screen_display_touch": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 1
+      },
+      "store_billing_subscription": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 3
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        127,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        33,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "tfidf_logistic_baseline": {
+    "sample_count": 200,
+    "classes": [
+      "app_performance_crash",
+      "apple_id_account_security",
+      "audio_call_accessory",
+      "battery_power_charging",
+      "general_complaint_feedback",
+      "hardware_repair_store_service",
+      "icloud_storage_backup",
+      "ios_update_issue",
+      "network_connectivity",
+      "screen_display_touch",
+      "store_billing_subscription"
+    ],
+    "accuracy": 0.98,
+    "macro_precision": 0.9697,
+    "macro_recall": 0.9971,
+    "macro_f1": 0.9816,
+    "weighted_f1": 0.9805,
+    "per_intent": {
+      "app_performance_crash": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 7
+      },
+      "apple_id_account_security": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 4
+      },
+      "audio_call_accessory": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      "battery_power_charging": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 16
+      },
+      "general_complaint_feedback": {
+        "precision": 1.0,
+        "recall": 0.9685,
+        "f1_score": 0.984,
+        "support": 127
+      },
+      "hardware_repair_store_service": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      "icloud_storage_backup": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1_score": 0.8571,
+        "support": 3
+      },
+      "ios_update_issue": {
+        "precision": 0.9167,
+        "recall": 1.0,
+        "f1_score": 0.9565,
+        "support": 33
+      },
+      "network_connectivity": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 4
+      },
+      "screen_display_touch": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      "store_billing_subscription": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3
+      }
+    },
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        123,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        33,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  "final_agent": {
+    "sample_count": 200,
+    "classes": [
+      "app_performance_crash",
+      "apple_id_account_security",
+      "audio_call_accessory",
+      "battery_power_charging",
+      "general_complaint_feedback",
+      "hardware_repair_store_service",
+      "icloud_storage_backup",
+      "ios_update_issue",
+      "network_connectivity",
+      "screen_display_touch",
+      "store_billing_subscription"
+    ],
+    "accuracy": 0.98,
+    "macro_precision": 0.9697,
+    "macro_recall": 0.9971,
+    "macro_f1": 0.9816,
+    "weighted_f1": 0.9805,
+    "per_intent": {
+      "app_performance_crash": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 7
+      },
+      "apple_id_account_security": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 4
+      },
+      "audio_call_accessory": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      "battery_power_charging": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 16
+      },
+      "general_complaint_feedback": {
+        "precision": 1.0,
+        "recall": 0.9685,
+        "f1_score": 0.984,
+        "support": 127
+      },
+      "hardware_repair_store_service": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      "icloud_storage_backup": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1_score": 0.8571,
+        "support": 3
+      },
+      "ios_update_issue": {
+        "precision": 0.9167,
+        "recall": 1.0,
+        "f1_score": 0.9565,
+        "support": 33
+      },
+      "network_connectivity": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 4
+      },
+      "screen_display_touch": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1
+      },
+      "store_billing_subscription": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 3
+      }
+    },
+    "confusion_matrix": [
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        123,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        33,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  }
+}
